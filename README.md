@@ -7,7 +7,7 @@ Aplikace si navíc pamatuje, které postavy máte odemčené, takže to nemusít
 ## Hlavní funkce
 
 * **Podpora pro obě role:** Oddělené generování pro Survivory a Killery se specifickými pravidly (Killer má pouze addony, Survivor může mít i item).
-* **Chytré filtry:** Addony se u Survivora vygenerují pouze v případě, že vygenerovaný item dává smysl. Generují se jen platné předměty a vynechávají se limitované (event) předměty.
+* **Chytré filtry:** Addony se u Survivora vygenerují pouze v případě, že vygenerovaný item dává smysl. Generují se jen platné předměty a vynechávají se limitované předměty.
 * **Paměť nastavení:** Zaškrtnuté postavy se ukládají do lokálního souboru `user_settings.json`.
 
 ## Verze aplikace
