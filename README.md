@@ -4,13 +4,13 @@ Jednoduchá a přehledná desktopová aplikace napsaná v Pythonu, která slouž
 
 Aplikace si navíc pamatuje, které postavy máte odemčené, takže to nemusíte při každém spuštění nastavovat znovu.
 
-## 🌟 Hlavní funkce
+## Hlavní funkce
 
 * **Podpora pro obě role:** Oddělené generování pro Survivory a Killery se specifickými pravidly (Killer má pouze addony, Survivor může mít i item).
 * **Chytré filtry:** Addony se u Survivora vygenerují pouze v případě, že vygenerovaný item dává smysl. Generují se jen platné předměty a vynechávají se limitované (event) předměty.
 * **Paměť nastavení:** Zaškrtnuté postavy se ukládají do lokálního souboru `user_settings.json`.
 
-## 📦 Verze aplikace
+## Verze aplikace
 
 Tento projekt obsahuje dvě verze kódu, aby si uživatel mohl vybrat, co mu více vyhovuje:
 
@@ -24,7 +24,7 @@ Tento projekt obsahuje dvě verze kódu, aby si uživatel mohl vybrat, co mu ví
 * **Výhody:** Nevyžaduje připojení k internetu a zapíná se okamžitě.
 * **Nevýhody:** Když vyjde nový Killer/Survivor, musíte manuálně aktualizovat.
 
-## 🛠️ Požadavky a spuštění
+## Požadavky a spuštění
 
 Pokud chcete aplikaci spouštět ze zdrojového kódu (Python skriptu), musíte mít nainstalovaný Python a následující knihovny:
 
