@@ -1,0 +1,11 @@
+# Uživatelské nastavení
+user_settings.json
+
+# PyInstaller (ignorujeme vše, co vzniká při kompilaci)
+build/
+dist/
+*.spec
+
+# Standardní Python mezipaměť
+__pycache__/
+*.pyc
