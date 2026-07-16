@@ -1,0 +1,3079 @@
+{
+    "Agitation": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Agitation",
+        "description": "While carrying a Survivor:<ul><li>You gain {Tunable.K01P03.Haste%}% {Keyword.Haste}.</li><li>Your Terror Radius is {Tunable.K01P03.TerrorRadiusIncreaseSize}m larger.</li></ul>",
+        "role": "killer",
+        "character": 268435456,
+        "tunables": {
+            "haste%": [
+                6,
+                12,
+                18
+            ],
+            "terrorradiusincreasesize": [
+                12
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_agitation"
+    },
+    "Bamboozle": {
+        "categories": [
+            "chasing",
+            "trickery"
+        ],
+        "name": "Bamboozle",
+        "description": "Whenever you vault a Window, it is blocked for Survivors for {Tunable.K12P01.WindowBlockDurations}s.<br><br>You basic-vault Windows {Tunable.K12P01.WindowVaultSpeed%}% faster.<br><br>Only 1 Window can be blocked at a time.",
+        "role": "killer",
+        "character": 268435467,
+        "tunables": {
+            "windowblockdurations": [
+                8,
+                12,
+                16
+            ],
+            "windowvaultspeed%": [
+                5,
+                10,
+                15
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Guam/iconPerks_bamboozle"
+    },
+    "BBQAndChilli": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Barbecue & Chili",
+        "description": "Whenever you hook a Survivor, for {Tunable.K09P02.AuraRevealDuration}s, you see the Auras of all Survivors who are at least {Tunable.K09P02.MinDistanceFromHook}m away from the hooked Survivor.",
+        "role": "killer",
+        "character": 268435464,
+        "tunables": {
+            "modifygeneratorkickdamageadditive%": [
+                1,
+                3,
+                5
+            ],
+            "aurarevealduration": [
+                5
+            ],
+            "mindistancefromhook": [
+                60,
+                50,
+                40
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Cannibal/iconPerks_BBQAndChili"
+    },
+    "BeastOfPrey": {
+        "categories": [
+            "chasing"
+        ],
+        "name": "Beast of Prey",
+        "description": "Whenever you gain Bloodlust, gain {Keyword.Undetectable} for {Tunable.K08P01.UndetectableDuration}s.",
+        "role": "killer",
+        "character": 268435463,
+        "tunables": {
+            "undetectableduration": [
+                30,
+                35,
+                40
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC5/iconPerks_BeastOfPrey"
+    },
+    "Bitter_Murmur": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Bitter Murmur",
+        "description": "Whenever a Generator is completed, you see the Auras of Survivors within {Tunable.KG_Bitter_Murmur.AuraRevealRange}m of it for {Tunable.KG_Bitter_Murmur.AuraRevealDuration}s.<br><br>When all Generators are completed, you see the Auras of all Survivors for {Tunable.KG_Bitter_Murmur.AuraRevealEndgameDuration}s.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "aurarevealduration": [
+                5
+            ],
+            "aurarevealendgameduration": [
+                5,
+                7,
+                10
+            ],
+            "aurarevealrange": [
+                16
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_bitterMurmur"
+    },
+    "BloodEcho": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Blood Echo",
+        "description": "Whenever you hook a Survivor, for {Tunable.K18P02.HemorrhageExhaustionDuration}s, all injured Survivors:<ul><li>Gain {Keyword.Exhausted}.</li><li>Gain {Keyword.Hemorrhage}.</li></ul>",
+        "role": "killer",
+        "character": 268435473,
+        "tunables": {
+            "hemorrhageexhaustionduration": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Sweden/iconPerks_bloodEcho"
+    },
+    "BloodHound": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Bloodhound",
+        "description": "Pools of Blood are brighter and last {Tunable.K02P02.ExtraTrackDuration}s longer.",
+        "role": "killer",
+        "character": 268435457,
+        "tunables": {
+            "extratrackduration": [
+                2,
+                3,
+                4
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_bloodhound"
+    },
+    "BloodWarden": {
+        "categories": [
+            "trickery",
+            "obstruction"
+        ],
+        "name": "Blood Warden",
+        "description": "When an Exit Gate is opened, once per trial, when you hook a Survivor, both Exits are blocked for {Tunable.K10P03.GateBlockDuration}s.<br><br>You see the Auras of Survivors within Exit Thresholds.",
+        "role": "killer",
+        "character": 268435465,
+        "tunables": {
+            "gateblockduration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/England/iconPerks_bloodWarden"
+    },
+    "BoonDestroyer": {
+        "categories": null,
+        "name": "Shattered Hope",
+        "description": "Whenever you snuff a Boon Totem:<ul><li>You see the Auras of all Survivors within its range for {Tunable.SG_Shattered_Hope.AuraRevealDuration}s.</li><li>It is destroyed.</li></ul>",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "aurarevealduration": [
+                6,
+                7,
+                8
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Meteor/iconPerks_BoonDestroyer"
+    },
+    "Brutal_Strength": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Brutal Strength",
+        "description": "You basic-break Pallets and Breakable Walls, and damage Generators {Tunable.K01P02.ActionSpeed%}% faster.",
+        "role": "killer",
+        "character": 268435456,
+        "tunables": {
+            "actionspeed%": [
+                10,
+                15,
+                20
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_brutalStrength"
+    },
+    "CorruptIntervention": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Corrupt Intervention",
+        "description": "When the trial starts, the {Tunable.K15P01.GeneratorsBlocked} farthest Generators from you are blocked for {Tunable.K15P01.GeneratorBlockDuration}s, or until you down a Survivor.",
+        "role": "killer",
+        "character": 268435470,
+        "tunables": {
+            "generatorblockduration": [
+                80,
+                100,
+                120
+            ],
+            "generatorsblocked": [
+                3
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Mali/iconPerks_corruptIntervention"
+    },
+    "Coulrophobia": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Coulrophobia",
+        "description": "Survivors within your Terror Radius:<ul><li>Heal {Tunable.K12P02.HealPenalty%}% slower.</li><li>While healing, basic Skill Checks spin {Tunable.K12P02.SkillCheckSpeedIncrease%}% faster.</li></ul>",
+        "role": "killer",
+        "character": 268435467,
+        "tunables": {
+            "healpenalty%": [
+                30,
+                40,
+                50
+            ],
+            "skillcheckspeedincrease%": [
+                50
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Guam/iconPerks_coulrophobia"
+    },
+    "CruelConfinement": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Cruel Limits",
+        "description": "Whenever a Generator is completed:<ul><li>You see the Auras of all Windows for {Tunable.K17P02.BlockDuration}s.</li><li>All Windows are blocked for Survivors for {Tunable.K17P02.BlockDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435472,
+        "tunables": {
+            "blockduration": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Qatar/iconPerks_cruelConfinement"
+    },
+    "DarkDevotion": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Dark Devotion",
+        "description": "Whenever the Obsession takes damage, for {Tunable.K15P03.TerrorRadiusTransferDuration}s:<ul><li>Your Terror Radius is set to {Tunable.K15P03.TerrorRadiusSize}m.</li><li>The Obsession has your Terror Radius.</li><li>You gain {Keyword.Undetectable}.</li></ul>",
+        "role": "killer",
+        "character": 268435470,
+        "tunables": {
+            "affectedplayerhearingdistance": [
+                4
+            ],
+            "terrorradiussize": [
+                40
+            ],
+            "terrorradiustransferduration": [
+                35,
+                40,
+                45
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Mali/iconPerks_darkDevotion"
+    },
+    "DeadMansSwitch": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Dead Man’s Switch",
+        "description": "When you hook a Survivor, the first time a Survivor stops repairing a Generator, it is blocked for {Tunable.K19P02.GeneratorBlockDuration}s. Cooldown: {Tunable.K19P02.GeneratorBlockDuration}s.",
+        "role": "killer",
+        "character": 268435474,
+        "tunables": {
+            "generatorblockduration": [
+                25,
+                30,
+                35
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ukraine/iconPerks_deadManSwitch"
+    },
+    "Deathbound": {
+        "categories": [
+            "trickery",
+            "tracking"
+        ],
+        "name": "Deathbound",
+        "description": "Whenever a Survivor finishes healing another, they scream. Then, until they take damage, while they are at least {Tunable.K20P03.MaximumDistance}m away from that Survivor:<ul><li>They gain {Keyword.Oblivious}.</li><li>They see that Survivor's Aura.</li></ul>",
+        "role": "killer",
+        "character": 268435475,
+        "tunables": {
+            "maximumdistance": [
+                12,
+                8,
+                4
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Wales/iconPerks_deathbound"
+    },
+    "Deerstalker": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Deerstalker",
+        "description": "Every {Tunable.KG_Deerstalker.RevealTimeIntervals}s, the Survivor with the least time in chase sees your Aura for {Tunable.KG_Deerstalker.RevealDuration}s.<br><br>While a Survivor sees your Aura, you see their Aura.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "revealduration": [
+                3
+            ],
+            "revealtimeintervals": [
+                40,
+                35,
+                30
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_deerstalker"
+    },
+    "Discordance": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Discordance",
+        "description": "Within {Tunable.K14P01.EffectRange}m of you, whenever a Generator is being repaired by at least 2 Survivors, you are alerted.<br><br>While that Generator is being repaired by at least 2 Survivors, you see its Aura. When it is no longer being repaired by at least 2 Survivors, this ends after {Tunable.K14P01.AuraLingerDuration}s.",
+        "role": "killer",
+        "character": 268435469,
+        "tunables": {
+            "auralingerduration": [
+                4
+            ],
+            "effectrange": [
+                64,
+                96,
+                128
+            ],
+            "survivorsneeded": [
+                2
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Kenya/iconPerks_discordance"
+    },
+    "Distressing": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Distressing",
+        "description": "Your Terror Radius is {Tunable.KG_Distressing.TerrorRadiusIncreaseSize%}% larger.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "terrorradiusincreasesize%": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_distressing"
+    },
+    "DragonsGrip": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Dragon’s Grip",
+        "description": "Whenever you damage a Generator, for the next {Tunable.K21P01.ActiveDuration}s, the first Survivor that repairs that Generator:<ul><li>They scream, then you are alerted to their position for {Tunable.K21P01.AuraRevealDuration}s.</li><li>They gain {Keyword.Exposed} for {Tunable.K21P01.ExposedDuration}s.</li></ul><br><br>Cooldown: {Tunable.K21P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435476,
+        "tunables": {
+            "activeduration": [
+                30
+            ],
+            "aurarevealduration": [
+                4
+            ],
+            "cooldown": [
+                60,
+                45,
+                30
+            ],
+            "exposedduration": [
+                60
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Yemen/iconPerks_dragonsGrip"
+    },
+    "Dying_Light": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Dying Light",
+        "description": "Whenever you hook a Survivor that is not the Obsession, earn {Tunable.K06P02.TokensPerHook} token.<br><br>While the Obsession is alive, for each Token:<ul><li>Other Survivors heal {Tunable.K06P02.ActionSpeedPenaltyPerToken%}% slower.</li><li>Other Survivors repair {Tunable.K06P02.ActionSpeedPenaltyPerToken%}% slower.</li><li>Other Survivors sabotage Hooks {Tunable.K06P02.ActionSpeedPenaltyPerToken%}% slower.</li></ul><br><br>The Obsession:<ul><li>Heals other Survivors {Tunable.K06P02.ObsessionActionSpeedBonus%}% faster.</li><li>Unhooks other Survivors {Tunable.K06P02.ObsessionActionSpeedBonus%}% faster.</li></ul>",
+        "role": "killer",
+        "character": 268435461,
+        "tunables": {
+            "actionspeedpenaltypertoken%": [
+                2,
+                2.5,
+                3
+            ],
+            "obsessionactionspeedbonus%": [
+                33
+            ],
+            "tokensperhook": [
+                1
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC2/iconPerks_dyingLight"
+    },
+    "Enduring": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Enduring",
+        "description": "While not carrying a Survivor, Pallet-stuns are {Tunable.K03P01.StunDurationReduction%}% shorter.",
+        "role": "killer",
+        "character": 268435458,
+        "tunables": {
+            "stundurationreduction%": [
+                40,
+                45,
+                50
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_enduring"
+    },
+    "FireUp": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Fire Up",
+        "description": "Whenever a Generator is completed, earn {Tunable.K10P01.TokensPerGenerator} Token, up to {Tunable.K10P01.MaxTokens}.<br><br>For each Token:<ul><li>You basic-break Pallets and Breakable Walls {Tunable.K10P01.ActionSpeedBonus%}% faster.</li><li>You damage Generators {Tunable.K10P01.ActionSpeedBonus%}% faster.</li><li>You pick-up and drop Survivors {Tunable.K10P01.ActionSpeedBonus%}% faster.</li><li>You basic-vault Windows {Tunable.K10P01.ActionSpeedBonus%}% faster.</li></ul>",
+        "role": "killer",
+        "character": 268435465,
+        "tunables": {
+            "actionspeedbonus%": [
+                4,
+                5,
+                6
+            ],
+            "maxtokens": [
+                5
+            ],
+            "tokenspergenerator": [
+                1
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/England/iconPerks_fireUp"
+    },
+    "ForcedPenance": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Forced Penance",
+        "description": "Whenever a Survivor takes a protection hit, they gain {Keyword.Broken} for {Tunable.K20P01.BrokenDuration}s.",
+        "role": "killer",
+        "character": 268435475,
+        "tunables": {
+            "brokenduration": [
+                60,
+                70,
+                80
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Wales/iconPerks_forcedPenance"
+    },
+    "FranklinsLoss": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Franklin's Demise",
+        "description": "Whenever you damage a Survivor with a basic attack, they drop their item.<br><br>Within {Tunable.K09P03.ItemsRevealDistance}m, you see the Auras of dropped items.",
+        "role": "killer",
+        "character": 268435464,
+        "tunables": {
+            "dropitemlocationspheretestbuffer": [
+                10
+            ],
+            "dropitemlocationspheretestradius": [
+                15
+            ],
+            "itemsrevealdistance": [
+                32,
+                48,
+                64
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Cannibal/iconPerks_franklinsLoss"
+    },
+    "FurtiveChase": {
+        "categories": [
+            "chasing",
+            "trickery"
+        ],
+        "name": "Furtive Chase",
+        "description": "Whenever you hook the Obsession:<ul><li>You gain {Tunable.K16P03.Haste%}% {Keyword.Haste} for {Tunable.K16P03.UndetectableHasteDuration}s.</li><li>You gain {Keyword.Undetectable} for {Tunable.K16P03.UndetectableHasteDuration}s.</li></ul><br><br>Whenever the Obsession is unhooked, the Survivor who unhooked them becomes the Obsession.",
+        "role": "killer",
+        "character": 268435471,
+        "tunables": {
+            "haste%": [
+                10
+            ],
+            "undetectablehasteduration": [
+                14,
+                16,
+                18
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Oman/iconPerks_furtiveChase"
+    },
+    "Gearhead": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Gearhead",
+        "description": "Whenever a Survivor takes damage, for the next {Tunable.K19P01.EffectDuration}s, whenever a Survivor repairing a Generator hits a good basic Skill Check, you see their Aura for {Tunable.K19P01.AuraRevealDuration}s.",
+        "role": "killer",
+        "character": 268435474,
+        "tunables": {
+            "aurarevealduration": [
+                6,
+                7,
+                8
+            ],
+            "effectduration": [
+                30
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ukraine/iconPerks_gearHead"
+    },
+    "GeneratorOvercharge": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Overcharge",
+        "description": "Whenever you damage a Generator:<ul><li>Its regression speed will go from {Tunable.K07P03.StartingRegressionSpeed%}% to {Tunable.K07P03.MaxRegressionSpeed%}% over the next {Tunable.K07P03.RegressionRampDuration}s.</li><li>The next Survivor who starts repairing it gets a special Skill Check. If they miss it, they lose {Tunable.K07P03.GenRegressionOnFail%}% more progress.</li></ul>",
+        "role": "killer",
+        "character": 268435462,
+        "tunables": {
+            "genregressiononfail%": [
+                2,
+                3,
+                4
+            ],
+            "maxregressionspeed%": [
+                130
+            ],
+            "regressionrampduration": [
+                30
+            ],
+            "startingregressionspeed%": [
+                85
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC4/iconPerks_generatorOvercharge"
+    },
+    "HangmansTrick": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Scourge Hook: Hangman's Trick",
+        "description": "When the trial starts, 4 random Hooks become Scourge Hooks.<br><br>While carrying a Survivor, you see the Auras of Survivors within {Tunable.K11P01.AuraRevealDistance}m of Scourge Hooks.<br><br>Whenever a Survivor starts sabotaging a Hook, you are alerted.",
+        "role": "killer",
+        "character": 268435466,
+        "tunables": {
+            "aurarevealdistance": [
+                12,
+                14,
+                16
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Finland/iconPerks_hangmansTrick"
+    },
+    "Hex_Devour_Hope": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Hex: Devour Hope",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>Whenever a Survivor is unhooked while you are at least {Tunable.K05P03.DistanceFromHook}m away, earn {Tunable.K05P03.TokensPerUnhook} Token, up to {Tunable.K05P03.MaxTokens}:<ul><li>2 Tokens | {Tunable.K05P03.HasteDelayDuration}s after hooking a Survivor, gain {Tunable.K05P03.Haste%}% {Keyword.Haste} for {Tunable.K05P03.HasteDuration}s.</li><li>3 Tokens | Survivors gain {Keyword.Exposed}.</li><li>5 Tokens | You can Kill downed Survivors.</li></ul>",
+        "role": "killer",
+        "character": 268435460,
+        "tunables": {
+            "distancefromhook": [
+                24
+            ],
+            "haste%": [
+                3,
+                4,
+                5
+            ],
+            "hastedelayduration": [
+                10
+            ],
+            "hasteduration": [
+                10
+            ],
+            "maxtokens": [
+                5
+            ],
+            "tokensforexposed": [
+                3
+            ],
+            "tokensforhaste": [
+                2
+            ],
+            "tokensformori": [
+                5
+            ],
+            "tokensperunhook": [
+                1
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC3/iconPerks_devourHope"
+    },
+    "Hex_HauntedGround": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Hex: Haunted Ground",
+        "description": "When the trial starts, 2 Dull Totems ignite.<br><br>When either of those Hex Totems is blessed or cleansed:<ul><li>All Survivors gain {Keyword.Exposed} for {Tunable.K13P02.ExposedDuration}s.</li><li>The other Totem is extinguished.</li></ul>",
+        "role": "killer",
+        "character": 268435468,
+        "tunables": {
+            "exposedduration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Haiti/iconPerks_hauntedGround"
+    },
+    "Hex_HuntressLullaby": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Hex: Huntress Lullaby",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>Whenever you hook a Survivor, earn {Tunable.K08P03.TokensPerHook} Token. For each Token, Basic Skill Check warnings appear later and good success zones are smaller.<br><br>While you have <b>5</b> Tokens, Basic Skill Check warnings don't appear.<br><br>Whenever a Survivor misses a basic Skill Check, they lose {Tunable.K08P03.RegressionBonus%}% more progress.",
+        "role": "killer",
+        "character": 268435463,
+        "tunables": {
+            "regressionbonus%": [
+                2,
+                4,
+                6
+            ],
+            "maxtokens": [
+                5
+            ],
+            "tokensperhook": [
+                1
+            ],
+            "warningtimingreduction%": [
+                14
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC5/iconPerks_HuntressLullaby"
+    },
+    "Hex_Ruin": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Hex: Ruin",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>While a Generator is not being repaired, it regresses at {Tunable.K05P02.RegressionSpeed%}% speed.",
+        "role": "killer",
+        "character": 268435460,
+        "tunables": {
+            "regressionspeed%": [
+                100,
+                125,
+                150
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC3/iconPerks_ruin"
+    },
+    "Hex_The_Third_Seal": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Hex: The Third Seal",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>Whenever you damage a Survivor with a basic or special-attack, they gain {Keyword.Blindness}.<br><br>This applies for up to {Tunable.K05P01.MaxAffectedSurvivors} Survivors.",
+        "role": "killer",
+        "character": 268435460,
+        "tunables": {
+            "maxaffectedsurvivors": [
+                2,
+                3,
+                4
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC3/iconPerks_theThirdSeal"
+    },
+    "Hex_Thrill_Of_The_Hunt": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Hex: Thrill of the Hunt",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>For each Dull and Hex Totem remaining, you have {Tunable.KG_Hex_Thrill_Of_The_Hunt.TokensPerTotem} Token.<br><br>For each Token, Survivors bless and cleanse totems {Tunable.KG_Hex_Thrill_Of_The_Hunt.ActionSpeedReductionPerToken%}% slower.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "actionspeedreductionpertoken%": [
+                8,
+                10,
+                12
+            ],
+            "tokenspertotem": [
+                1
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC3/iconPerks_thrillOfTheHunt"
+    },
+    "HexBloodFavor": {
+        "categories": [
+            "chasing"
+        ],
+        "name": "Hex: Blood Favor",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>Whenever you damage a Survivor, Upright Pallets within {Tunable.K21P03.EffectRadius}m of them are blocked for {Tunable.K21P03.BlockDuration}s.",
+        "role": "killer",
+        "character": 268435476,
+        "tunables": {
+            "blockduration": [
+                15
+            ],
+            "effectradius": [
+                24,
+                28,
+                32
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Yemen/iconPerks_hexBloodFavor"
+    },
+    "HexRetribution": {
+        "categories": [
+            "trickery",
+            "tracking"
+        ],
+        "name": "Hex: Retribution",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>Whenever a Survivor starts blessing or cleansing a Totem, they gain {Keyword.Oblivious} for {Tunable.K19P03.ObliviousDuration}s.<br><br>Whenever a Hex Totem is blessed or cleansed, you see the Auras of all Survivors for {Tunable.K19P03.AuraRevealDuration}s.",
+        "role": "killer",
+        "character": 268435474,
+        "tunables": {
+            "aurarevealduration": [
+                20
+            ],
+            "obliviousduration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ukraine/iconPerks_hexRetribution"
+    },
+    "HexUndying": {
+        "categories": [
+            "obstruction",
+            "tracking"
+        ],
+        "name": "Hex: Undying",
+        "description": "When the trial starts, a Dull Totem ignites.<br><br>When another Hex Totem is blessed or cleansed, it replaces this one and keeps any Tokens it had.<br><br>You see the Auras of Survivors within {Tunable.K21P02.AuraRevealDistance}m of Dull Totems.",
+        "role": "killer",
+        "character": 268435476,
+        "tunables": {
+            "aurarevealdistance": [
+                2,
+                3,
+                4
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Yemen/iconPerks_hexUndying"
+    },
+    "ImAllEars": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "I'm All Ears",
+        "description": "Whenever a Survivor fast-enters or fast-exits a Locker, or medium or fast-vaults within {Tunable.K16P01.ActivationRange}m of you, you see their Aura for {Tunable.K16P01.AuraRevealDuration}s. Cooldown: {Tunable.K16P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435471,
+        "tunables": {
+            "activationrange": [
+                48
+            ],
+            "aurarevealduration": [
+                8
+            ],
+            "cooldown": [
+                60,
+                45,
+                30
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Oman/iconPerks_imAllEars"
+    },
+    "InfectiousFright": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Infectious Fright",
+        "description": "Whenever a Survivor is downed, Survivors within your Terror Radius scream and you are alerted for {Tunable.K15P02.RevealDuration}s.",
+        "role": "killer",
+        "character": 268435470,
+        "tunables": {
+            "revealduration": [
+                4,
+                5,
+                6
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Mali/iconPerks_infectiousFright"
+    },
+    "Insidious": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Insidious",
+        "description": "After being idle for {Tunable.KG_Insidious.TimeToActivate}s, you gain {Keyword.Undetectable} until you act.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "timetoactivate": [
+                3,
+                2,
+                1
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_insidious"
+    },
+    "InTheDark": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Knock Out",
+        "description": "Whenever a Survivor drops a Pallet, for the next {Tunable.K09P01.TriggerTime}s, if they move {Tunable.K09P01.DistanceThreshold}m away from it, they gain {Tunable.K09P01.Hindered%}% {Keyword.Hindered} for {Tunable.K09P01.HinderedDuration}s.",
+        "role": "killer",
+        "character": 268435464,
+        "tunables": {
+            "distancethreshold": [
+                6
+            ],
+            "hindered%": [
+                5
+            ],
+            "hinderedduration": [
+                3,
+                4,
+                5
+            ],
+            "triggertime": [
+                6
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Cannibal/iconPerks_knockOut"
+    },
+    "Iron_Grasp": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Iron Grasp",
+        "description": "While carrying a Survivor:<ul><li>They wiggle {Tunable.KG_Iron_Grasp.WiggleTimeIncrease%}% slower.</li><li>Their wiggle is {Tunable.KG_Iron_Grasp.WiggleStrengthReduction%}% weaker.</li></ul>",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "wigglestrengthreduction%": [
+                75
+            ],
+            "wiggletimeincrease%": [
+                4,
+                8,
+                12
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_ironGrasp"
+    },
+    "Ironmaiden": {
+        "categories": [
+            "tracking",
+            "trickery"
+        ],
+        "name": "Iron Maiden",
+        "description": "Whenever a Survivor exits a Locker:<ul><li>They gain {Keyword.Exposed} for {Tunable.K14P03.ExposedDuration}s.</li><li>They scream, then you are alerted to their location for {Tunable.K14P03.RevealDuration}s.</li></ul><br><br>You open Lockers {Tunable.K14P03.ActionSpeed%}% faster.",
+        "role": "killer",
+        "character": 268435469,
+        "tunables": {
+            "revealduration": [
+                4
+            ],
+            "actionspeed%": [
+                30,
+                40,
+                50
+            ],
+            "exposedduration": [
+                30
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Kenya/iconPerks_ironMaiden"
+    },
+    "K22P01": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Hoarder",
+        "description": "When the trial starts, {Tunable.K22P01.ExtraChestsSpawned} more Chests appear.<br><br>Whenever a Survivor picks-up an item or starts unlocking a Chest within {Tunable.K22P01.RevealDistance}m of you, you are alerted.",
+        "role": "killer",
+        "character": 268435477,
+        "tunables": {
+            "bubbleindicatorlifetime": [
+                4
+            ],
+            "extrachestsspawned": [
+                2
+            ],
+            "revealdistance": [
+                32,
+                48,
+                64
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Aurora/iconPerks_Hoarder"
+    },
+    "K22P02": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Oppression",
+        "description": "Whenever you damage a Generator, up to {Tunable.K22P02.AffectedGenerators} other Generators start regressing. Survivors repairing them get a special Skill Check. Cooldown: {Tunable.K22P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435477,
+        "tunables": {
+            "affectedgenerators": [
+                4
+            ],
+            "cooldown": [
+                45,
+                40,
+                35
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Aurora/iconPerks_Oppression"
+    },
+    "K22P03": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Coup de Grâce",
+        "description": "Whenever a Generator is completed, you earn {Tunable.K22P03.TokensGainedPerGenerator} Tokens, up to {Tunable.K22P03.MaxTokens}.<br><br>Whenever you lunge-attack, spend {Tunable.K22P03.TokensSpentPerLunge} Token to make it {Tunable.K22P03.LungeExtraDuration%}% longer.",
+        "role": "killer",
+        "character": 268435477,
+        "tunables": {
+            "lungeextraduration%": [
+                70,
+                75,
+                80
+            ],
+            "maxtokens": [
+                5
+            ],
+            "tokensgainedpergenerator": [
+                2
+            ],
+            "tokensspentperlunge": [
+                1
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Aurora/iconPerks_coupDeGrace"
+    },
+    "K23P01": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Starstruck",
+        "description": "While carrying a Survivor, Survivors within your Terror Radius gain {Keyword.Exposed}. This ends {Tunable.K23P01.ExposedLingerDuration}s after:<ul><li>They leave your Terror Radius.</li><li>You drop or hook the carried Survivor.</li></ul><br><br>Cooldown: {Tunable.K23P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435478,
+        "tunables": {
+            "cooldown": [
+                60
+            ],
+            "exposedlingerduration": [
+                26,
+                28,
+                30
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Comet/iconPerks_Starstruck"
+    },
+    "K23P02": {
+        "categories": [
+            "chasing"
+        ],
+        "name": "Hex: Crowd Control",
+        "description": "The first time a Survivor medium or fast-vaults a Window, a Dull Totem ignites.<br><br>The last {Tunable.K23P02.MaximumVaultsBlocked} Windows Survivors medium or fast-vault are blocked.<br><br>You basic-vault blocked Windows {Tunable.K23P02.VaultSpeedIncrease%}% faster.<br><br>You see the Auras of blocked Windows within {Tunable.K23P02.AuraRevealDistance}m.",
+        "role": "killer",
+        "character": 268435478,
+        "tunables": {
+            "maximumvaultsblocked": [
+                4,
+                5,
+                6
+            ],
+            "vaultspeedincrease%": [
+                15
+            ],
+            "aurarevealdistance": [
+                24
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Comet/iconPerks_HexCrowdControl"
+    },
+    "K23P03": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "No Way Out",
+        "description": "The first time you hook each Survivor, you earn {Tunable.K23P03.TokensPerUniqueHook} Token.<br><br>When all Generators are completed, when a Survivor starts opening an Exit Gate:<ul><li>It is blocked {Tunable.K23P03.GateBlockBaseDuration}s, plus {Tunable.K23P03.GateBlockDurationPerToken}s for each Token.</li><li>You are alerted.</li></ul>",
+        "role": "killer",
+        "character": 268435478,
+        "tunables": {
+            "gateblockbaseduration": [
+                12
+            ],
+            "gateblockdurationpertoken": [
+                6,
+                9,
+                12
+            ],
+            "tokensperuniquehook": [
+                1
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Comet/iconPerks_NoWayOut"
+    },
+    "K24P01": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Lethal Pursuer",
+        "description": "When the trial starts, you see the Auras of all Survivors for {Tunable.K24P01.AuraRevealDuration}s.<br><br>Whenever you see a Survivor's Aura for a duration, it is {Tunable.K24P01.BonusAuraRevealDuration}s longer.",
+        "role": "killer",
+        "character": 268435479,
+        "tunables": {
+            "aurarevealduration": [
+                7,
+                8,
+                9
+            ],
+            "bonusaurarevealduration": [
+                2
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Eclipse/iconPerks_lethalPursuer"
+    },
+    "K24P02": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Hysteria",
+        "description": "Whenever a healthy Survivor becomes injured, all injured Survivors gain {Keyword.Oblivious} for {Tunable.K24P02.ObliviousDuration}s. Cooldown: {Tunable.K24P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435479,
+        "tunables": {
+            "cooldown": [
+                20
+            ],
+            "obliviousduration": [
+                30,
+                35,
+                40
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Eclipse/iconPerks_hysteria"
+    },
+    "K24P03": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Eruption",
+        "description": "Whenever you damage a Generator, when you down a Survivor, all Generators damaged this way:<ul><li>Explode, lose {Tunable.K24P03.GeneratorRegress%}% progress and start regressing.</li><li>Survivors repairing them scream, then you see their Auras for {Tunable.K24P03.AuraRevealDuration}s.</li></ul><br><br>Cooldown: {Tunable.K24P03.Cooldown}s.",
+        "role": "killer",
+        "character": 268435479,
+        "tunables": {
+            "aurarevealduration": [
+                8,
+                10,
+                12
+            ],
+            "cooldown": [
+                30
+            ],
+            "generatorregress%": [
+                10
+            ],
+            "screamreveallocationduration": [
+                4
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Eclipse/iconPerks_eruption"
+    },
+    "K25P01": {
+        "categories": null,
+        "name": "Deadlock",
+        "description": "Whenever a Generator is completed, the Generator with the most progress is blocked for {Tunable.K25P01.GeneratorBlockDuration}s.",
+        "role": "killer",
+        "character": 268435480,
+        "tunables": {
+            "generatorblockduration": [
+                15,
+                20,
+                25
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Gemini/iconPerks_Deadlock"
+    },
+    "K25P02": {
+        "categories": null,
+        "name": "Hex: Plaything",
+        "description": "The first time you hook each Survivor, they are hexed and a Dull Totem ignites.<br><br>For {Tunable.K25P02.TotemBlockDuration}s, the Hex Totem is blocked to other Survivors.<br><br>The hexed Survivors:<br><br><ul><li>Gain {Keyword.Oblivious}.</li><li>Within {Tunable.K25P02.TotemAuraRevealDistance}m of the Hex totem, they see its Aura.</li></ul>",
+        "role": "killer",
+        "character": 268435480,
+        "tunables": {
+            "totemaurarevealdistance": [
+                24,
+                20,
+                16
+            ],
+            "totemblockduration": [
+                90
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Gemini/iconPerks_HexPlaything"
+    },
+    "K25P03": {
+        "categories": null,
+        "name": "Scourge Hook: Gift of Pain",
+        "description": "When the trial starts, 4 random Hooks become Scourge Hooks.<br><br>Whenever a Survivor is unhooked from a Scourge Hook:<ul><li>They gain {Keyword.Hemorrhage} for {Tunable.K25P03.MangledHemorrhageDuration}s.</li><li>They gain {Keyword.Mangled} for {Tunable.K25P03.MangledHemorrhageDuration}s.</li><li>When they are healed, until they take damage, they heal and repair {Tunable.K25P03.ActionSpeedDebuff%}% slower.</li></ul>",
+        "role": "killer",
+        "character": 268435480,
+        "tunables": {
+            "actionspeeddebuff%": [
+                10,
+                13,
+                16
+            ],
+            "mangledhemorrhageduration": [
+                90
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Gemini/iconPerks_ScourgeHookGiftOfPain"
+    },
+    "K26P01": {
+        "categories": null,
+        "name": "Grim Embrace",
+        "description": "Whenever you hook a Survivor for the first time, earn {Tunable.K26P01.TokensPerUniqueHook} Token.<br><br>When you move {Tunable.K26P01.HookedDistance}m away from the hooked Survivor, all Generators are blocked for {Tunable.K26P01.GeneratorBlockDuration}s.<br><br>When you have {Tunable.K26P01.SurvivorsToBeHooked} Tokens, when you move {Tunable.K26P01.HookedDistance}m away from the hooked Survivor:<ul><li>All Generators are blocked for {Tunable.K26P01.FinalGeneratorBlockDuration}s.</li><li>You see the Obsession's Aura for {Tunable.K26P01.AuraRevealDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435481,
+        "tunables": {
+            "aurarevealduration": [
+                10
+            ],
+            "finalgeneratorblockduration": [
+                40
+            ],
+            "generatorblockduration": [
+                6,
+                8,
+                10
+            ],
+            "hookeddistance": [
+                16
+            ],
+            "survivorstobehooked": [
+                4
+            ],
+            "tokensperuniquehook": [
+                1
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ion/T_iconPerks_grimEmbrace"
+    },
+    "K26P02": {
+        "categories": null,
+        "name": "Scourge Hook: Pain Resonance",
+        "description": "When the trial starts:<ul><li>4 random Hooks become Scourge Hooks.</li><li>You earn {Tunable.K26P02.StartingTokens} Tokens.</li></ul><br><br>The first time each Survivor is hooked on a Scourge Hook, spend {Tunable.K26P02.TokensSpentOnUniqueHook} Token, then the Generator with the most progress:<ul><li>Explodes, loses {Tunable.K26P02.GeneratorRegression%}% progress and starts regressing.</li><li>Survivors repairing it scream.</li></ul>",
+        "role": "killer",
+        "character": 268435481,
+        "tunables": {
+            "generatorregression%": [
+                10,
+                15,
+                20
+            ],
+            "startingtokens": [
+                4
+            ],
+            "tokensspentonuniquehook": [
+                1
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ion/T_iconPerks_painResonance"
+    },
+    "K26P03": {
+        "categories": null,
+        "name": "Hex: Pentimento",
+        "description": "You see the Auras of cleansed Totems, and can rekindle each once.<br><br>Within {Tunable.K26P03.TotemAuraReveaDistance}m, Survivors see the Auras of Rekindled Totems.<br><br>While a totem is rekindled, Survivors heal and repair {Tunable.K26P03.BaseActionSpeedPenalty%}% slower, plus {Tunable.K26P03.ActionSpeedPenaltyPerTotem%}% for each additional Rekindled Totem.<br><br>When all {Tunable.K26P03.MaxTokens} Totems are rekindled at once, they are blocked.",
+        "role": "killer",
+        "character": 268435481,
+        "tunables": {
+            "actionspeedpenaltypertotem%": [
+                1,
+                2,
+                3
+            ],
+            "baseactionspeedpenalty%": [
+                20
+            ],
+            "totemaurareveadistance": [
+                16
+            ],
+            "maxtokens": [
+                5
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ion/T_iconPerks_hexPentimento"
+    },
+    "K27P01": {
+        "categories": null,
+        "name": "Scourge Hook: Floods of Rage",
+        "description": "When the trial starts, 4 random Hooks become Scourge Hooks.<br><br>Whenever a Survivor is unhooked from a Scourge Hook, you see the Auras of other Survivors for {Tunable.K27P01.AuraRevealDuration}s.",
+        "role": "killer",
+        "character": 268435482,
+        "tunables": {
+            "aurarevealduration": [
+                5,
+                6,
+                7
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Kepler/iconPerks_floodOfRage"
+    },
+    "K27P02": {
+        "categories": null,
+        "name": "Call of Brine",
+        "description": "Whenever you damage a Generator, it regresses {Tunable.K27P02.RegressionModifier%}% faster for {Tunable.K27P02.Duration}s.<br><br>For that time, whenever a Survivor hits a good basic Skill Check while repairing that Generator, you are alerted.",
+        "role": "killer",
+        "character": 268435482,
+        "tunables": {
+            "duration": [
+                70
+            ],
+            "regressionmodifier%": [
+                30,
+                40,
+                50
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Kepler/iconPerks_callOfBrine"
+    },
+    "K27P03": {
+        "categories": null,
+        "name": "Merciless Storm",
+        "description": "The first time each Generator has {Tunable.K27P03.GeneratorProgressionRequired%}% progress: Survivors repairing it get special Skill Checks. If they miss one of these or stop repairing, that Generator is blocked for {Tunable.K27P03.GeneratorBlockedDuration}s.",
+        "role": "killer",
+        "character": 268435482,
+        "tunables": {
+            "generatorblockedduration": [
+                16,
+                18,
+                20
+            ],
+            "generatorprogressionrequired%": [
+                90
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Kepler/iconPerks_mercilessStorm"
+    },
+    "K28P01": {
+        "categories": null,
+        "name": "Dissolution",
+        "description": "{Tunable.K28P01.TimeBeforeTrigger}s after a Survivor takes damage, for {Tunable.K28P01.EffectDuration}s, the next time a Survivor fast-vaults a Pallet while within your Terror Radius, it is destroyed.",
+        "role": "killer",
+        "character": 268435483,
+        "tunables": {
+            "effectduration": [
+                12,
+                16,
+                20
+            ],
+            "timebeforetrigger": [
+                3
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Meteor/iconPerks_Dissolution"
+    },
+    "K28P02": {
+        "categories": null,
+        "name": "Darkness Revealed",
+        "description": "Whenever you search a Locker, you see the Auras of Survivors within {Tunable.K28P02.DetectionDistance}m of Lockers for {Tunable.K28P02.AuraRevealDuration}s. Cooldown: {Tunable.K28P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435483,
+        "tunables": {
+            "aurarevealduration": [
+                6,
+                7,
+                8
+            ],
+            "cooldown": [
+                30
+            ],
+            "detectiondistance": [
+                8
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Meteor/iconPerks_DarknessRevelated"
+    },
+    "K28P03": {
+        "categories": null,
+        "name": "Septic Touch",
+        "description": "While a Survivor within your Terror Radius is healing:<ul><li>They gain {Keyword.Blindness}.</li><li>They gain {Keyword.Exhausted}.</li></ul><br><br>When they stop healing, this ends after {Tunable.K28P03.BlindnessExhaustionDuration}s.",
+        "role": "killer",
+        "character": 268435483,
+        "tunables": {
+            "blindnessexhaustionduration": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Meteor/iconPerks_SepticTouch"
+    },
+    "K29P01": {
+        "categories": null,
+        "name": "Superior Anatomy",
+        "description": "Whenever a Survivor fast-vaults within {Tunable.K29P01.SurvivorVaultDistance}m of you, the next time you basic-vault a window, it is {Tunable.K29P01.VaultSpeed%}% faster. Cooldown: {Tunable.K29P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435484,
+        "tunables": {
+            "cooldown": [
+                25
+            ],
+            "survivorvaultdistance": [
+                12
+            ],
+            "vaultspeed%": [
+                30,
+                35,
+                40
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Orion/iconPerks_SuperiorAnatomy"
+    },
+    "K29P02": {
+        "categories": null,
+        "name": "Awakened Awareness",
+        "description": "While carrying a Survivor, within {Tunable.K29P02.AuraRevealDistance}m of you, you see the Auras of other Survivors.",
+        "role": "killer",
+        "character": 268435484,
+        "tunables": {
+            "aurarevealdistance": [
+                16,
+                18,
+                20
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Orion/iconPerks_AwakenedAwarenesss"
+    },
+    "K29P03": {
+        "categories": null,
+        "name": "Terminus",
+        "description": "When all Generators are completed: all injured, downed, and hooked Survivors gain {Keyword.Broken}.<br><br>When an Exit Gate is opened, this ends after {Tunable.K29P03.BrokenDuration}s.",
+        "role": "killer",
+        "character": 268435484,
+        "tunables": {
+            "brokenduration": [
+                35,
+                40,
+                45
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Orion/iconPerks_Terminus"
+    },
+    "K30P01": {
+        "categories": null,
+        "name": "Nowhere to Hide",
+        "description": "Whenever you damage a Generator, for {Tunable.K30P01.AuraRevealDuration}s, you see the Auras of Survivors within {Tunable.K30P01.AuraRevealDistance}m of you.",
+        "role": "killer",
+        "character": 268435485,
+        "tunables": {
+            "aurarevealdistance": [
+                24
+            ],
+            "aurarevealduration": [
+                3,
+                4,
+                5
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Quantum/iconPerks_NowhereToHide"
+    },
+    "K30P02": {
+        "categories": null,
+        "name": "Hex: Face the Darkness",
+        "description": "Whenever you damage a Survivor, they are hexed and a Dull Totem ignites.<br><br>Every {Tunable.K30P02.ScreamInterval}s, other Survivors not within your Terror Radius scream, then you see their Auras for {Tunable.K30P02.AuraRevealDuration}s.<br><br>When the hexed Survivor is downed or becomes healthy, the Hex Totem is extinguished.",
+        "role": "killer",
+        "character": 268435485,
+        "tunables": {
+            "aurarevealduration": [
+                2
+            ],
+            "screaminterval": [
+                35,
+                30,
+                25
+            ],
+            "screamrevealduration": [
+                2
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Quantum/iconPerks_HexFaceTheDarkness"
+    },
+    "K30P03": {
+        "categories": null,
+        "name": "Hubris",
+        "description": "Whenever you are stunned by a Survivor, they gain {Keyword.Exposed} for {Tunable.K30P03.ExposedDuration}s. Cooldown: {Tunable.K30P03.Cooldown}s.",
+        "role": "killer",
+        "character": 268435485,
+        "tunables": {
+            "cooldown": [
+                20
+            ],
+            "exposedduration": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Quantum/iconPerks_Hubris"
+    },
+    "K31P01": {
+        "categories": [
+            "enhancement",
+            "cruelty"
+        ],
+        "name": "Game Afoot",
+        "description": "While chasing the Obsession, whenever you basic-break Pallets or Breakable Walls, or damage Generators, you gain {Tunable.K31P01.Haste%}% {Keyword.Haste} for {Tunable.K31P01.HasteDuration}s.<br><br>Whenever you damage the Survivor with the most chase time with a basic-attack, they become the Obsession.",
+        "role": "killer",
+        "character": 268435486,
+        "tunables": {
+            "haste%": [
+                7
+            ],
+            "hasteduration": [
+                8,
+                9,
+                10
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Saturn/iconPerks_GameAfoot"
+    },
+    "K31P02": {
+        "categories": [
+            "tracking",
+            "trickery"
+        ],
+        "name": "THWACK!",
+        "description": "When the trial starts, you earn {Tunable.K31P02.StartingTokens} Tokens, up to {Tunable.K31P02.MaxTokens}.<br><br>Whenever you hook a Survivor, you earn {Tunable.K31P02.TokenGainOnHook} Token.<br><br>Whenever you break a Pallet or Breakable Wall, spend {Tunable.K31P02.TokensSpentPerBreak} Token. Then, all Survivors within {Tunable.K31P02.Range}m scream and you see their Auras for {Tunable.K31P02.RevealDuration}s.",
+        "role": "killer",
+        "character": 268435486,
+        "tunables": {
+            "maxtokens": [
+                3
+            ],
+            "range": [
+                36
+            ],
+            "revealduration": [
+                4,
+                5,
+                6
+            ],
+            "startingtokens": [
+                3
+            ],
+            "tokengainonhook": [
+                1
+            ],
+            "tokensspentperbreak": [
+                1
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Saturn/iconPerks_Thwack"
+    },
+    "K31P03": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Leverage",
+        "description": "Whenever a Survivor unhooks another or themselves, they heal {Tunable.K31P03.HealPenalty%}% slower for {Tunable.K31P03.ReduceHealingDuration}s.",
+        "role": "killer",
+        "character": 268435486,
+        "tunables": {
+            "healpenalty%": [
+                20,
+                25,
+                30
+            ],
+            "reducehealingduration": [
+                60
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Saturn/iconPerks_Leverage"
+    },
+    "K32P01": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Genetic Limits",
+        "description": "Whenever a Survivor takes damage, they gain {Keyword.Exhausted} for {Tunable.K32P01.ExhaustionDuration}s.",
+        "role": "killer",
+        "character": 268435487,
+        "tunables": {
+            "exhaustionduration": [
+                6,
+                7,
+                8
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Umbra/IconPerks_GeneticLimits"
+    },
+    "K32P02": {
+        "categories": [
+            "cruelty",
+            "hinderance"
+        ],
+        "name": "Forced Hesitation",
+        "description": "Whenever you down a Survivor, other Survivors within {Tunable.K32P02.RequiredDistance}m of the downed Survivor gain {Tunable.K32P02.Hinder%}% {Keyword.Hindered} for {Tunable.K32P02.HinderedDuration}s. Cooldown: {Tunable.K32P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435487,
+        "tunables": {
+            "cooldown": [
+                40,
+                35,
+                30
+            ],
+            "hinderedduration": [
+                10
+            ],
+            "hinder%": [
+                20
+            ],
+            "requireddistance": [
+                16
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Umbra/IconPerks_ForcedHesitation"
+    },
+    "K32P03": {
+        "categories": [
+            "enhancement",
+            "chasing"
+        ],
+        "name": "Machine Learning",
+        "description": "Whenever you damage a Generator, it becomes compromised.<br><br>When that Generator is completed by Survivors:<ul><li>You gain {Tunable.K32P03.Haste%}% {Keyword.Haste} for {Tunable.K32P03.PerkDuration}s.</li><li>You gain {Keyword.Undetectable} for {Tunable.K32P03.PerkDuration}s.</li></ul><br><br>Only one Generator can be compromised at a time.",
+        "role": "killer",
+        "character": 268435487,
+        "tunables": {
+            "perkduration": [
+                40,
+                50,
+                60
+            ],
+            "haste%": [
+                8
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Umbra/IconPerks_SelfAware"
+    },
+    "K33P01": {
+        "categories": null,
+        "name": "Ultimate Weapon",
+        "description": "Whenever you search a Locker, Survivors within {Tunable.K33P01.RequiredDistance}m:<ul><li>Gain {Keyword.Blindness} for {Tunable.K33P01.BlindnessDuration}s.</li><li>Scream.</li></ul><br><br>Cooldown: {Tunable.K33P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435488,
+        "tunables": {
+            "blindnessduration": [
+                30
+            ],
+            "cooldown": [
+                55,
+                50,
+                45
+            ],
+            "requireddistance": [
+                40
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Wormhole/iconPerks_UltimateWeapon"
+    },
+    "K33P02": {
+        "categories": null,
+        "name": "Rapid Brutality",
+        "description": "Whenever you damage a Survivor with a basic-attack, you gain {Tunable.K33P02.Haste%}% {Keyword.Haste} for {Tunable.K33P02.HasteDuration}s.<br><br>While chasing a Survivor, you cannot gain Bloodlust.",
+        "role": "killer",
+        "character": 268435488,
+        "tunables": {
+            "haste%": [
+                5
+            ],
+            "hasteduration": [
+                8,
+                9,
+                10
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Wormhole/iconPerks_RapidBrutality"
+    },
+    "K33P03": {
+        "categories": null,
+        "name": "Alien Instinct",
+        "description": "Whenever you hook a Survivor, the farthest injured Survivor:<ul><li>Gains {Keyword.Oblivious} for {Tunable.K33P03.ObliviousDuration}s.</li><li>You see their Aura for {Tunable.K33P03.AuraRevealDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435488,
+        "tunables": {
+            "aurarevealduration": [
+                8
+            ],
+            "obliviousduration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Wormhole/iconPerks_AlienInstinct"
+    },
+    "K34P01": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Hex: Two Can Play",
+        "description": "While this Hex is dull, each time you are blinded or stunned by a Survivor {Tunable.K34P01.StunnedOrBlindedTimesRequired} times, a Dull Totem ignites.<br><br>Whenever you are blinded or stunned by a Survivor you are not carrying, they are blinded for {Tunable.K34P01.BlindedDuration}s.",
+        "role": "killer",
+        "character": 268435489,
+        "tunables": {
+            "blindedduration": [
+                1.5
+            ],
+            "survivorblindramptime": [
+                0.20000000298023224
+            ],
+            "stunnedorblindedtimesrequired": [
+                4,
+                3,
+                2
+            ],
+            "tokensperstunblind": [
+                1
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Yerkes/iconPerks_twoCanPlay"
+    },
+    "K34P02": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Friends ‘Til the End",
+        "description": "Whenever you hook a Survivor that is not the Obsession:<ul><li>The Obsession gains {Keyword.Exposed} for {Tunable.K34P02.ExposedDuration}s.</li><li>You see the Obsession's Aura for {Tunable.K34P02.AuraRevealDuration}s.</li></ul><br><br>Whenever you hook the Obsession, another Survivor:<ul><li>Screams, then you are alerted.</li><li>Becomes the Obsession.</li></ul>",
+        "role": "killer",
+        "character": 268435489,
+        "tunables": {
+            "aurarevealduration": [
+                6,
+                8,
+                10
+            ],
+            "exposedduration": [
+                20
+            ],
+            "screamrevealduration": [
+                2
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Yerkes/iconPerks_friendsTillTheEnd"
+    },
+    "K34P03": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Batteries Included",
+        "description": "Within {Tunable.K34P03.RequiredDistance}m of a completed Generator, you gain {Tunable.K34P03.Haste%}% {Keyword.Haste}. When you leave the range, this ends after {Tunable.K34P03.HasteLingerDuration}s.",
+        "role": "killer",
+        "character": 268435489,
+        "tunables": {
+            "haste%": [
+                5
+            ],
+            "hastelingerduration": [
+                1,
+                3,
+                5
+            ],
+            "requireddistance": [
+                16
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Yerkes/iconPerks_batteriesIncluded"
+    },
+    "K35P01": {
+        "categories": null,
+        "name": "Unbound",
+        "description": "Whenever a healthy Survivor becomes injured, for the next {Tunable.K35P01.EffectDuration}s, whenever you basic-vault a window, gain {Tunable.K35P01.Haste%}% {Keyword.Haste} for {Tunable.K35P01.HasteDuration}s.",
+        "role": "killer",
+        "character": 268435490,
+        "tunables": {
+            "effectduration": [
+                24,
+                27,
+                30
+            ],
+            "haste%": [
+                7
+            ],
+            "hasteduration": [
+                10
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Applepie/iconPerks_Unbound"
+    },
+    "K35P02": {
+        "categories": null,
+        "name": "Unforeseen",
+        "description": "Whenever you damage a Generator:<ul><li>Your Terror Radius is set to that Generator for {Tunable.K35P02.EffectDuration}s and its radius is {Tunable.K35P02.TerrorRadiusSize}m.</li><li>You gain {Keyword.Undetectable} for that time.</li></ul><br><br>Cooldown: {Tunable.K35P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435490,
+        "tunables": {
+            "cooldown": [
+                30
+            ],
+            "effectduration": [
+                22,
+                26,
+                30
+            ],
+            "terrorradiussize": [
+                32
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Applepie/iconPerks_Unforeseen"
+    },
+    "K35P03": {
+        "categories": null,
+        "name": "Undone",
+        "description": "Whenever a Survivor misses a basic Skill Check, earn {Tunable.K35P03.TokenGain} Tokens, up to {Tunable.K35P03.MaxTokens}.<br><br>Whenever you damage a Generator, spend all Tokens. For each Token spent:<ul><li>The Generator loses {Tunable.K35P03.GeneratorRegressionPerToken%}% progress.</li><li>The Generator is blocked for {Tunable.K35P03.BlockTimePerToken}s.</li></ul><br><br>When that Generator is unblocked, it begins regressing. Cooldown: {Tunable.K35P03.Cooldown}s.",
+        "role": "killer",
+        "character": 268435490,
+        "tunables": {
+            "blocktimepertoken": [
+                1
+            ],
+            "cooldown": [
+                60
+            ],
+            "generatorregressionpertoken%": [
+                1
+            ],
+            "maxtokens": [
+                18,
+                24,
+                30
+            ],
+            "tokengain": [
+                3
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Applepie/iconPerks_Undone"
+    },
+    "K36P01": {
+        "categories": null,
+        "name": "Weave Attunement",
+        "description": "The first time each item is depleted, it is dropped.<br><br>While a Survivor is within {Tunable.K36P01.AuraRevealDistance}m of a dropped item:<ul><li>You see their Aura.</li><li>They see the item's Aura.</li></ul><br><br>Whenever a Survivor picks-up an item, they gain {Keyword.Oblivious} for {Tunable.K36P01.ObliviousDuration}s.",
+        "role": "killer",
+        "character": 268435491,
+        "tunables": {
+            "aurarevealdistance": [
+                12
+            ],
+            "obliviousduration": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Churros/iconPerks_WeaveAttunement"
+    },
+    "K36P02": {
+        "categories": null,
+        "name": "Languid Touch",
+        "description": "Whenever a Survivor within {Tunable.K36P02.RangeFromKiller}m of you scares a Crow, they gain {Keyword.Exhausted} for {Tunable.K36P02.ExhaustedDuration}s. Cooldown: {Tunable.K36P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435491,
+        "tunables": {
+            "cooldown": [
+                5
+            ],
+            "exhaustedduration": [
+                6,
+                8,
+                10
+            ],
+            "rangefromkiller": [
+                36
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Churros/iconPerks_LanguidTouch"
+    },
+    "K36P03": {
+        "categories": null,
+        "name": "Dark Arrogance",
+        "description": "You basic-vault Windows {Tunable.K36P03.VaultSpeedIncrease%}% faster.<br><br>Whenever you are blinded or Pallet-stunned, the duration is {Tunable.K36P03.ExtraBlindStunDuration%}% longer.",
+        "role": "killer",
+        "character": 268435491,
+        "tunables": {
+            "extrablindstunduration%": [
+                15
+            ],
+            "vaultspeedincrease%": [
+                15,
+                20,
+                25
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Churros/iconPerks_DarkArrogance"
+    },
+    "K37P01": {
+        "categories": null,
+        "name": "Hex: Wretched Fate",
+        "description": "The first time a Generator is completed, a Dull Totem ignites.<br><br>The Obsession:<ul><li>Repairs {Tunable.K37P01.RepairSpeedPenalty%}% slower.</li><li>Sees the Hex Totem's Aura within {Tunable.K37P01.AuraRevealDistance}m.</li></ul>",
+        "role": "killer",
+        "character": 268435492,
+        "tunables": {
+            "aurarevealdistance": [
+                12
+            ],
+            "repairspeedpenalty%": [
+                27,
+                30,
+                33
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Eclair/iconPerks_HexWretchedFate"
+    },
+    "K37P02": {
+        "categories": null,
+        "name": "Human Greed",
+        "description": "Whenever a Survivor gets within {Tunable.K37P02.AuraRevealRange}m of a locked Chest, you see their Aura for {Tunable.K37P02.AuraRevealDuration}s.<br><br>You can lock unlocked Chests. Cooldown: {Tunable.K37P02.Cooldown}s.<br><br>You see the Auras of locked Chests.",
+        "role": "killer",
+        "character": 268435492,
+        "tunables": {
+            "aurarevealduration": [
+                3,
+                4,
+                5
+            ],
+            "aurarevealrange": [
+                8
+            ],
+            "cooldown": [
+                10
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Eclair/iconPerks_HumanGreed"
+    },
+    "K37P03": {
+        "categories": null,
+        "name": "Dominance",
+        "description": "The first time each Chest is being unlocked and each Totem is being blessed or cleansed by a Survivor, it is blocked for {Tunable.K37P03.BlockDuration}s.",
+        "role": "killer",
+        "character": 268435492,
+        "tunables": {
+            "blockduration": [
+                8,
+                12,
+                16
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Eclair/iconPerks_Dominance"
+    },
+    "K38P01": {
+        "categories": null,
+        "name": "All-Shaking Thunder",
+        "description": "Whenever you fall from at least {Tunable.K38P01.RequiredFallHeight}m, your lunge-attacks are {Tunable.K38P01.LungeAttackExtra%}% longer for {Tunable.K38P01.EffectDuration}s. Cooldown: {Tunable.K38P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435493,
+        "tunables": {
+            "cooldown": [
+                5
+            ],
+            "effectduration": [
+                15,
+                20,
+                25
+            ],
+            "lungeattackextra%": [
+                75
+            ],
+            "requiredfallheight": [
+                1.25
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Gelato/T_UI_iconPerks_AllShakingThunder"
+    },
+    "K38P02": {
+        "categories": null,
+        "name": "Scourge Hook: Jagged Compass",
+        "description": "When the trial starts, 4 random Hooks become Scourge Hooks.<br><br>Whenever a Survivor is unhooked, the Hook becomes a Scourge Hook.<br><br>Whenever you hook a Survivor on a Scourge Hook, for {Tunable.K38P02.GeneratorRevealDuration}s, you see the Aura of the Generator with the most progress.",
+        "role": "killer",
+        "character": 268435493,
+        "tunables": {
+            "generatorrevealduration": [
+                6,
+                8,
+                10
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Gelato/T_UI_iconPerks_ScourgeHookJaggedCompass"
+    },
+    "K38P03": {
+        "categories": null,
+        "name": "No Quarter",
+        "description": "While self-healing, whenever a Survivor has {Tunable.K38P03.SelfHealTrigger%}% progress, they get special Skill Checks. If they miss one of these or stop healing, they gain {Keyword.Broken} for {Tunable.K38P03.BrokenDuration}s.",
+        "role": "killer",
+        "character": 268435493,
+        "tunables": {
+            "brokenduration": [
+                20,
+                25,
+                30
+            ],
+            "selfhealtrigger%": [
+                75
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Gelato/T_UI_iconPerks_NoQuarter"
+    },
+    "K39P01": {
+        "categories": null,
+        "name": "Hex: Nothing But Misery",
+        "description": "After you damage Survivors with a basic-attack {Tunable.K39P01.BasicHitsRequired} times, a Dull Totem ignites.<br><br>Whenever you damage a Survivor with a basic-attack, they gain {Tunable.K39P01.Hindered%}% {Keyword.Hindered} for {Tunable.K39P01.HinderedDuration}s.",
+        "role": "killer",
+        "character": 268435494,
+        "tunables": {
+            "basichitsrequired": [
+                8
+            ],
+            "hindered%": [
+                5
+            ],
+            "hinderedduration": [
+                10,
+                12.5,
+                15
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Icecream/T_UI_iconPerks_NothingButMisery"
+    },
+    "K39P02": {
+        "categories": null,
+        "name": "Forever Entwined",
+        "description": "Whenever a Survivor takes damage, you earn {Tunable.K39P02.TokensPerDamage} Token, up to {Tunable.K39P02.MaxTokens}.<br><br>For each Token:<ul><li>You hook Survivors {Tunable.K39P02.BonusPerToken%}% faster.</li><li>You pick-up and drop Survivors {Tunable.K39P02.BonusPerToken%}% faster.</li></ul>",
+        "role": "killer",
+        "character": 268435494,
+        "tunables": {
+            "bonuspertoken%": [
+                4
+            ],
+            "maxtokens": [
+                6,
+                7,
+                8
+            ],
+            "tokensperdamage": [
+                1
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Icecream/T_UI_iconPerks_ForeverEntwined"
+    },
+    "K39P03": {
+        "categories": null,
+        "name": "None Are Free",
+        "description": "The first time you hook each Survivor, earn {Tunable.K39P03.TokensPerUniqueHook} Token.<br><br>When all Generators are completed, for each Token:<ul><li>Upright Pallets are blocked for {Tunable.K39P03.BlockDurationPerToken}s.</li><li>Windows are blocked for {Tunable.K39P03.BlockDurationPerToken}s.</li></ul>",
+        "role": "killer",
+        "character": 268435494,
+        "tunables": {
+            "blockdurationpertoken": [
+                12,
+                14,
+                16
+            ],
+            "maxtokens": [
+                4
+            ],
+            "tokensperuniquehook": [
+                1
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Icecream/T_UI_iconPerks_NoneAreFree"
+    },
+    "K40P01": {
+        "categories": null,
+        "name": "Help Wanted",
+        "description": "Whenever you damage a Generator, it is compromised.<br><br>When that Generator is completed by Survivors, your basic-attack cooldowns are {Tunable.K40P01.AttackCooldownReduction%}% shorter for {Tunable.K40P01.Duration}s.<br><br>Only 1 Generator can be compromised at a time.",
+        "role": "killer",
+        "character": 268435495,
+        "tunables": {
+            "attackcooldownreduction%": [
+                25
+            ],
+            "duration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ketchup/T_UI_iconPerks_HelpWanted"
+    },
+    "K40P02": {
+        "categories": null,
+        "name": "Phantom Fear",
+        "description": "Whenever a Survivor within your Terror Radius looks at you, they scream, then you see their Aura for {Tunable.K40P02.AuraRevealDuration}s. Cooldown: {Tunable.K40P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435495,
+        "tunables": {
+            "aurarevealduration": [
+                2
+            ],
+            "cooldown": [
+                80,
+                70,
+                60
+            ],
+            "detectionangle": [
+                15
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ketchup/T_UI_iconPerks_PhantomFear"
+    },
+    "K40P03": {
+        "categories": null,
+        "name": "Haywire",
+        "description": "Exit Gate Switches with at least {Tunable.K40P03.RegressionThreshold%}% progress regress at {Tunable.K40P03.RegressionRate%}% speed.<br><br>While they are regressing, Survivors see the Exit Gate Lights flicker randomly.",
+        "role": "killer",
+        "character": 268435495,
+        "tunables": {
+            "regressionrate%": [
+                80,
+                90,
+                100
+            ],
+            "regressionthreshold%": [
+                80
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Ketchup/T_UI_iconPerks_Haywire"
+    },
+    "K41P01": {
+        "categories": null,
+        "name": "Ravenous",
+        "description": "The first time you hook each Survivor, you earn {Tunable.K41P01.TokensPerUniqueHook} Token.<br><br>When you have {Tunable.K41P01.MaxTokens} Tokens, all Survivors:<ul><li>Scream.</li><li>Gain {Keyword.Exposed} for {Tunable.K41P01.ExposedDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435496,
+        "tunables": {
+            "tokensperuniquehook": [
+                1
+            ],
+            "maxtokens": [
+                4
+            ],
+            "exposedduration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Maple/T_UI_iconPerks_Ravenous"
+    },
+    "K41P02": {
+        "categories": null,
+        "name": "Wandering Eye",
+        "description": "Whenever you start chasing a Survivor, for the next {Tunable.K41P02.RevealDuration}s, you see the Auras of all other injured Survivors within {Tunable.K41P02.RevealDistance}m. Cooldown: {Tunable.K41P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435496,
+        "tunables": {
+            "cooldown": [
+                40,
+                35,
+                30
+            ],
+            "revealdistance": [
+                20
+            ],
+            "revealduration": [
+                5
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Maple/T_UI_iconPerks_WanderingEye"
+    },
+    "K41P03": {
+        "categories": null,
+        "name": "Hex: Overture of Doom",
+        "description": "When the trial starts, a Dull Totem ignites and hexes the farthest Generator from it.<br><br>After a Survivor repairs the hexed Generator for {Tunable.K41P03.RequiredTime} seconds:<ul><li>You gain {Keyword.Undetectable} for {Tunable.K41P03.TerrorRadiusDisplacementDuration}s.</li><li>For that time, your Terror Radius is set to that Generator.</li></ul><br><br>When the hexed Generator is repaired, the next farthest Generator is hexed.",
+        "role": "killer",
+        "character": 268435496,
+        "tunables": {
+            "requiredtime": [
+                5
+            ],
+            "terrorradiusdisplacementduration": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Maple/T_UI_iconPerks_HexOvertureOfDoom"
+    },
+    "K42P01": {
+        "categories": null,
+        "name": "Turn Back The Clock",
+        "description": "After hooking a Survivor, for the next {Tunable.K42P01.Duration}s, use {Input.ActivatableButton1} to make target Generator you can see within {Tunable.K42P01.Range}m explode, lose {Tunable.K42P01.GeneratorRegression%}% progress and start regressing.<br>",
+        "role": "killer",
+        "character": 268435497,
+        "tunables": {
+            "duration": [
+                40,
+                50,
+                60
+            ],
+            "generatorregression%": [
+                10
+            ],
+            "range": [
+                20
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Poutine/T_UI_iconsPerks_TurnBackTheClock"
+    },
+    "K42P02": {
+        "categories": null,
+        "name": "Secret Project",
+        "description": "Whenever a totem is blessed or cleansed, a random unblocked Generator is blocked for {Tunable.K42P02.BlockDuration}s.<br><br>Whenever 1 or more Generators are blocked, you gain {Keyword.Undetectable} for {Tunable.K42P02.UndetectableDuration}s.",
+        "role": "killer",
+        "character": 268435497,
+        "tunables": {
+            "blockduration": [
+                20,
+                25,
+                30
+            ],
+            "undetectableduration": [
+                30
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Poutine/T_UI_iconsPerks_SecretProject"
+    },
+    "K42P03": {
+        "categories": null,
+        "name": "Hex: Hive Mind",
+        "description": "The first time you hook a Survivor, a Dull Totem ignites.<br><br>The Auras of Generators show their progress.<br><br>When {Tunable.K42P03.GeneratorsToActivate} Generator remains:<ul><li>All Generators explode, lose {Tunable.K42P03.GeneratorRegression%}% progress and start regressing.</li><li>The Hex Totem is extinguished.</li></ul>",
+        "role": "killer",
+        "character": 268435497,
+        "tunables": {
+            "generatorregression%": [
+                6,
+                8,
+                10
+            ],
+            "generatorstoactivate": [
+                1
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Poutine/T_UI_iconsPerks_HexHiveMind"
+    },
+    "K43P01": {
+        "categories": null,
+        "name": "Hex: Scared to Death",
+        "description": "After you hook {Tunable.K43P01.UniqueSurvivorsToHook} different Survivors, a Dull Totem ignites.<br><br>While chasing a Survivor, whenever you basic-break a Pallet, Survivors within {Tunable.K43P01.DistanceToSurvivors}m:<ul><li>Scream.</li><li>Gain {Tunable.K43P01.HinderedValue}% {Keyword.Hindered} for {Tunable.K43P01.HinderedDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435498,
+        "tunables": {
+            "uniquesurvivorstohook": [
+                3
+            ],
+            "distancetosurvivors": [
+                13
+            ],
+            "hinderedvalue": [
+                11,
+                12,
+                13
+            ],
+            "hinderedduration": [
+                3
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_ScaredToDeath"
+    },
+    "K43P02": {
+        "categories": null,
+        "name": "Silent Shadow",
+        "description": "Whenever you hook a Survivor, you gain {Keyword.Undetectable} for {Tunable.K43P02.StartTrialUndetectableDuration}s.<br><br>When all Generators are completed, you gain {Keyword.Undetectable}.",
+        "role": "killer",
+        "character": 268435498,
+        "tunables": {
+            "starttrialundetectableduration": [
+                11,
+                12,
+                13
+            ],
+            "endtrialundetectableduration": [
+                70,
+                100,
+                130
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_SilentShadow"
+    },
+    "K43P03": {
+        "categories": null,
+        "name": "Rampage",
+        "description": "Whenever you basic-break a Pallet or Breakable Wall, you earn {Tunable.K43P03.TokensGained} Token, up to {Tunable.K43P03.TokensMaximum}.<br><br>Whenever you are blinded or Pallet-stunned, for the next {Tunable.K43P03.HasteDuration}s you gain {Tunable.K43P03.HasteValue}% {Keyword.Haste} for each Token. Cooldown: {Tunable.K43P03.Cooldown}.",
+        "role": "killer",
+        "character": 268435498,
+        "tunables": {
+            "tokensgained": [
+                1
+            ],
+            "tokensmaximum": [
+                13
+            ],
+            "hasteduration": [
+                13
+            ],
+            "hastevalue": [
+                1
+            ],
+            "cooldown": [
+                30,
+                25,
+                20
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Sushi/T_UI_iconsPerks_Rampage"
+    },
+    "Lightborn": {
+        "categories": [
+            "enhancement"
+        ],
+        "name": "Lightborn",
+        "description": "Whenever a Survivor attempts to blind you, you see their Aura for {Tunable.K03P02.AuraRevealDuration}s.<br><br>You cannot be blinded.",
+        "role": "killer",
+        "character": 268435458,
+        "tunables": {
+            "aurarevealduration": [
+                6,
+                8,
+                10
+            ],
+            "modifyblindnesssusceptability%": [
+                -80
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_lightborn"
+    },
+    "MadGrit": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Mad Grit",
+        "description": "While carrying a Survivor:<ul><li>Whenever you miss a basic attack, your cooldown is {Tunable.K14P02.AttackCooldownReduction}% shorter.</li><li>Whenever you damage a Survivor with a basic attack, the carried Survivor gains no wiggle progress for {Tunable.K14P02.WigglePauseDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435469,
+        "tunables": {
+            "wigglepauseduration": [
+                2,
+                3,
+                4
+            ],
+            "attackcooldownreduction": [
+                100
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Kenya/iconPerks_madGrit"
+    },
+    "MakeYourChoice": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Make your Choice",
+        "description": "Whenever a Survivor unhooks another or themselves while you are at least {Tunable.K11P03.MinimumDistance}m away:<ul><li>They scream.</li><li>They gain {Keyword.Exposed} for {Tunable.K11P03.ExposedDuration}s.</li></ul><br><br>Cooldown: {Tunable.K11P03.Cooldown}s.",
+        "role": "killer",
+        "character": 268435466,
+        "tunables": {
+            "cooldown": [
+                40,
+                50,
+                60
+            ],
+            "exposedduration": [
+                40,
+                50,
+                60
+            ],
+            "minimumdistance": [
+                32
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Finland/iconPerks_makeYourChoice"
+    },
+    "Mindbreaker": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Mindbreaker",
+        "description": "While Survivors are repairing a Generator:<ul><li>They gain {Keyword.Blindness}.</li><li>They gain {Keyword.Exhausted}.</li></ul><br><br>When they stop repairing a Generator, this ends after {Tunable.K17P03.LingerDuration}s.",
+        "role": "killer",
+        "character": 268435472,
+        "tunables": {
+            "lingerduration": [
+                3,
+                4,
+                5
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Qatar/iconPerks_mindBreaker"
+    },
+    "MonitorAndAbuse": {
+        "categories": [
+            "tracking",
+            "trickery"
+        ],
+        "name": "Monitor & Abuse",
+        "description": "While chasing a Survivor, your Terror Radius is {Tunable.K07P02.TerrorRadiusIncrease%}% bigger.<br><br>While not chasing a Survivor, your Terror Radius is {Tunable.K07P02.TerrorRadiusDecrease%}% smaller.",
+        "role": "killer",
+        "character": 268435462,
+        "tunables": {
+            "terrorradiusdecrease%": [
+                15,
+                20,
+                25
+            ],
+            "terrorradiusincrease%": [
+                5,
+                10,
+                15
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC4/iconPerks_monitorAndAbuse"
+    },
+    "Monstrous_Shrine": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Scourge Hook: Monstrous Shrine",
+        "description": "When the trial starts:<ul><li>4 random Hooks become Scourge Hooks.</li><li>The Basement Hooks become Scourge Hooks.</li></ul><br><br>While you are at least {Tunable.KG_Monstrous_Shrine.Range}m away from a Survivor on a Scourge Hook, they are sacrificed {Tunable.KG_Monstrous_Shrine.FasterProgress%}% faster.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "fasterprogress%": [
+                10,
+                15,
+                20
+            ],
+            "range": [
+                24
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_monstrousShrine"
+    },
+    "Nemesis": {
+        "categories": [
+            "trickery",
+            "tracking"
+        ],
+        "name": "Nemesis",
+        "description": "Whenever a Survivor blinds you, Locker-stuns or Pallet-stuns you, they become the Obsession.<br><br>Whenever a Survivor becomes the Obsession:<ul><li>They gain {Keyword.Oblivious} for {Tunable.K18P03.ObliviousDuration}s.</li><li>You see their Aura for {Tunable.K18P03.AuraRevealDuration}s.</li></ul>",
+        "role": "killer",
+        "character": 268435473,
+        "tunables": {
+            "aurarevealduration": [
+                8
+            ],
+            "obliviousduration": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Sweden/iconPerks_nemesis"
+    },
+    "No_One_Escapes_Death": {
+        "categories": [
+            "cruelty",
+            "trickery"
+        ],
+        "name": "Hex: No One Escapes Death",
+        "description": "When all Generators are completed, a Dull Totem ignites:<ul><li>Survivors gain {Keyword.Exposed}.</li><li>You gain {Tunable.KG_No_One_Escapes_Death.Haste%}% {Keyword.Haste}.</li></ul><br><br>Within {Tunable.KG_No_One_Escapes_Death.AuraRevealStartRange}m, Survivors see the Hex Totem's Aura, expanding to {Tunable.KG_No_One_Escapes_Death.AuraRevealEndRange}m over {Tunable.KG_No_One_Escapes_Death.AuraSizeIncreaseDelay}s.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "aurarevealendrange": [
+                24
+            ],
+            "aurarevealstartrange": [
+                4
+            ],
+            "aurasizeincreasedelay": [
+                30
+            ],
+            "haste%": [
+                2,
+                3,
+                4
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_noOneEscapesDeath"
+    },
+    "NurseCalling": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "A Nurse's Calling",
+        "description": "Within {Tunable.K04P03.AuraRevealDistance}m of injured Survivors who are healing or being healed, you see their Auras.",
+        "role": "killer",
+        "character": 268435459,
+        "tunables": {
+            "aurarevealdistance": [
+                28,
+                30,
+                32
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_aNursesCalling"
+    },
+    "OverwhelmingPresence": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Overwhelming Presence",
+        "description": "Whenever a Survivor uses an item within {Tunable.K07P01.DistanceToSurvivorDistance}m of you, they gain {Keyword.Exhausted} for {Tunable.K07P01.ExhaustionDuration}s.<br><br>Whenever a Survivor within {Tunable.K07P01.DistanceToSurvivorDistance}m of you gains {Keyword.Exhausted}, you see the closest {Keyword.Exhausted} Survivor's Aura for {Tunable.K07P01.AuraRevealDuration}s. Cooldown: {Tunable.K07P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435462,
+        "tunables": {
+            "aurarevealduration": [
+                2,
+                3,
+                4
+            ],
+            "cooldown": [
+                25
+            ],
+            "distancetosurvivordistance": [
+                32
+            ],
+            "exhaustionduration": [
+                15
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC4/iconPerks_overwhelmingPresence"
+    },
+    "Play_With_Your_Food": {
+        "categories": [
+            "chasing"
+        ],
+        "name": "Play With Your Food",
+        "description": "Whenever you stop chasing the Obsession, you earn {Tunable.K06P03.TokensGained} Token, up to {Tunable.K06P03.MaxTokens}. Cooldown: {Tunable.K06P03.ChargeGainedCooldown}s.<br><br><br>For each Token, gain {Tunable.K06P03.Haste%}% {Keyword.Haste}.<br><br><br>Whenever you attack, lose {Tunable.K06P03.TokensLostOnAction} Token.",
+        "role": "killer",
+        "character": 268435461,
+        "tunables": {
+            "chargegainedcooldown": [
+                10
+            ],
+            "haste%": [
+                3,
+                4,
+                5
+            ],
+            "maxtokens": [
+                3
+            ],
+            "tokensgained": [
+                1
+            ],
+            "tokenslostonaction": [
+                1
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC2/iconPerks_playWithYourFood"
+    },
+    "pop_goes_the_weasel": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Pop Goes the Weasel",
+        "description": "Whenever you hook a Survivor, for the next {Tunable.K12P03.ActiveDuration}s, when you damage a Generator, it explodes and loses {Tunable.K12P03.ExtraGeneratorDamage%}% more progress.",
+        "role": "killer",
+        "character": 268435467,
+        "tunables": {
+            "activeduration": [
+                35,
+                40,
+                45
+            ],
+            "extrageneratordamage%": [
+                15
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Guam/iconPerks_popGoesTheWeasel"
+    },
+    "Predator": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Predator",
+        "description": "When you stop chasing a Survivor, you see their Aura for {Tunable.K02P01.AuraRevealDuration}s. Cooldown: {Tunable.K02P01.Cooldown}s.",
+        "role": "killer",
+        "character": 268435457,
+        "tunables": {
+            "aurarevealduration": [
+                4
+            ],
+            "cooldown": [
+                60,
+                50,
+                40
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_predator"
+    },
+    "Rancor": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Rancor",
+        "description": "Whenever a Generator is completed:<ul><li>You are alerted to the position of all Survivors for {Tunable.K13P03.SurvivorRevealDuration}s.</li><li>The Obsession sees your Aura for {Tunable.K13P03.KillerRevealDuration}s.</li></ul><br><br>When all Generators are completed:<ul><li>The Obsession gains {Keyword.Exposed}.</li><li>You can Kill the Obsession.</li></ul>",
+        "role": "killer",
+        "character": 268435468,
+        "tunables": {
+            "killerrevealduration": [
+                5,
+                4,
+                3
+            ],
+            "survivorrevealduration": [
+                3
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Haiti/iconPerks_hatred"
+    },
+    "RememberMe": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Remember Me",
+        "description": "Whenever the Obsession takes damage, you earn 1 Token, up to {Tunable.K10P02.MaximumTokens}.<br><br><br>For each Token, Survivors who are not the Obsession open Exit Gates {Tunable.K10P02.ActionSpeedPenalty%}% slower.",
+        "role": "killer",
+        "character": 268435465,
+        "tunables": {
+            "actionspeedpenalty%": [
+                30
+            ],
+            "maximumtokens": [
+                3,
+                4,
+                5
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/England/iconPerks_rememberMe"
+    },
+    "Save_The_Best_For_Last": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Save the best for last",
+        "description": "Whenever you damage a Survivor who is not the Obsession with a basic-attack, you earn {Tunable.K06P01.TokensGainedOnHit} Token, up to {Tunable.K06P01.MaxTokens}.<br><br>For each Token, your basic-attack cooldown are {Tunable.K06P01.AttackReductionPerToken%}% shorter.<br><br>Whenever the Obsession takes damage, lose {Tunable.K06P01.TokensLostOnHit} Tokens.<br><br>While the Obsession is dead, you cannot earn Tokens.",
+        "role": "killer",
+        "character": 268435461,
+        "tunables": {
+            "attackreductionpertoken%": [
+                4
+            ],
+            "maxtokens": [
+                6,
+                7,
+                8
+            ],
+            "tokensgainedonhit": [
+                1
+            ],
+            "tokenslostonhit": [
+                2
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC2/iconPerks_saveTheBestForLast"
+    },
+    "Shadowborn": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Shadowborn",
+        "description": "Whenever you are blinded, gain {Tunable.K02P03.Haste%}% {Keyword.Haste} for {Tunable.K02P03.Duration}s.",
+        "role": "killer",
+        "character": 268435457,
+        "tunables": {
+            "duration": [
+                10
+            ],
+            "haste%": [
+                6,
+                8,
+                10
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_shadowborn"
+    },
+    "Sloppy_Butcher": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Sloppy Butcher",
+        "description": "Whenever you damage a Survivor with a basic-attack:<ul><li>They gain {Keyword.Hemorrhage} for {Tunable.KG_Sloppy_Butcher.Duration}s.</li><li>They gain {Keyword.Mangled} for {Tunable.KG_Sloppy_Butcher.Duration}s.</li></ul><br><br>Survivors with {Keyword.Hemorrhage} lose healing progress {Tunable.KG_Sloppy_Butcher.HemmorhageBoost%}% faster.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "duration": [
+                70,
+                80,
+                90
+            ],
+            "hemmorhageboost%": [
+                25
+            ],
+            "modifyinjuredbleedingfrequency%": [
+                50,
+                75,
+                100
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_sloppyButcher"
+    },
+    "Spies_From_The_Shadows": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Spies from the Shadows",
+        "description": "Whenever a Survivor scares a Crow within {Tunable.KG_Spies_From_The_Shadows.NotificationRange}m of you, you are alerted. Cooldown: {Tunable.KG_Spies_From_The_Shadows.Cooldown}s.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "cooldown": [
+                5
+            ],
+            "crowloudnoisechance%": [
+                100
+            ],
+            "notificationrange": [
+                20,
+                28,
+                36
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_spiesFromTheShadows"
+    },
+    "SpiritFury": {
+        "categories": [
+            "chasing"
+        ],
+        "name": "Spirit Fury",
+        "description": "After you break {Tunable.K13P01.PalletsRequired} Pallets, when you are Pallet-stunned, the Pallet is destroyed.",
+        "role": "killer",
+        "character": 268435468,
+        "tunables": {
+            "palletsrequired": [
+                4,
+                3,
+                2
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Haiti/iconPerks_spiritFury"
+    },
+    "Stridor": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Stridor",
+        "description": "Survivors' breathing noises are {Tunable.K04P01.HealthySoundIncrease%}% louder and their Grunts of Pain are {Tunable.K04P01.InjuredSoundIncrease%}% louder.",
+        "role": "killer",
+        "character": 268435459,
+        "tunables": {
+            "healthysoundincrease%": [
+                15,
+                20,
+                25
+            ],
+            "injuredsoundincrease%": [
+                30,
+                40,
+                50
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_stridor"
+    },
+    "Surge": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Surge",
+        "description": "Whenever you down a Survivor with a basic-attack, Generators within {Tunable.K17P01.AffectedDistance}m:<ul><li>Explode, lose {Tunable.K17P01.Regression%}% progress and start regressing.</li><li>Survivor repairing them scream.</li></ul>",
+        "role": "killer",
+        "character": 268435472,
+        "tunables": {
+            "affecteddistance": [
+                32
+            ],
+            "regression%": [
+                6,
+                7,
+                8
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Qatar/iconPerks_surge"
+    },
+    "Surveillance": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Surveillance",
+        "description": "You see the Auras of regressing Generators.<br><br>Whenever a Generator stops regressing, you see its Aura for {Tunable.K11P02.RevealTime}s.<br><br>Generator repair noises can be heard from {Tunable.K11P02.NoiseRangeIncreaseDistance}m farther away.<br>",
+        "role": "killer",
+        "character": 268435466,
+        "tunables": {
+            "noiserangeincreasedistance": [
+                8
+            ],
+            "revealtime": [
+                8,
+                12,
+                16
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Finland/iconPerks_surveillance"
+    },
+    "TerritorialImperative": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Territorial Imperative",
+        "description": "Whenever a Survivor enters the Basement while you are {Tunable.K08P02.MinimumDistance}m away from it, you see their Aura for {Tunable.K08P02.RevealTime}s. Cooldown: {Tunable.K08P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435463,
+        "tunables": {
+            "cooldown": [
+                45
+            ],
+            "minimumdistance": [
+                24
+            ],
+            "revealtime": [
+                4,
+                5,
+                6
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/DLC5/iconPerks_TerritorialImperative"
+    },
+    "Thanatophobia": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Thanatophobia",
+        "description": "For each injured, downed, or hooked Survivor, all Survivors:<ul><li>Cleanse totems {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li><li>Repair {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li><li>Sabotage Hooks {Tunable.K04P02.ActionSpeedPenaltyPerSurvivor%}% slower.</li></ul><br><br>While 4 Survivors are either injured, downed or hooked, all above actions are additionally {Tunable.K04P02.ActionSpeedPenaltyBonus%}% slower.",
+        "role": "killer",
+        "character": 268435459,
+        "tunables": {
+            "actionspeedpenaltybonus%": [
+                12
+            ],
+            "actionspeedpenaltypersurvivor%": [
+                1,
+                1.5,
+                2
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_thatanophobia"
+    },
+    "ThrillingTremors": {
+        "categories": [
+            "obstruction"
+        ],
+        "name": "Thrilling Tremors",
+        "description": "Whenever you pick-up a Survivor, all Generators not being repaired are blocked for {Tunable.K16P02.Duration}s. Cooldown: {Tunable.K16P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435471,
+        "tunables": {
+            "cooldown": [
+                40,
+                35,
+                30
+            ],
+            "duration": [
+                16
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Oman/iconPerks_thrillingTremors"
+    },
+    "Tinkerer": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Tinkerer",
+        "description": "The first time each Generator has {Tunable.K03P03.TriggerThreshold%}% progress:<ul><li>You gain {Keyword.Undetectable} for {Tunable.K03P03.UndetectableDuration}s.</li><li>You are alerted.</li></ul>",
+        "role": "killer",
+        "character": 268435458,
+        "tunables": {
+            "distancethresholddistance": [
+                6
+            ],
+            "triggerthreshold%": [
+                70
+            ],
+            "undetectableduration": [
+                12,
+                14,
+                16
+            ]
+        },
+        "teachable": 40,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_tinkerer"
+    },
+    "TrailofTorment": {
+        "categories": [
+            "trickery"
+        ],
+        "name": "Trail of Torment",
+        "description": "Whenever you damage a Generator, until it stops regressing:<ul><li>You gain {Keyword.undetectable}.</li><li>Survivors see that Generator's Aura.</li></ul><br><br>Cooldown: {Tunable.K20P02.Cooldown}s.",
+        "role": "killer",
+        "character": 268435475,
+        "tunables": {
+            "cooldown": [
+                60,
+                45,
+                30
+            ]
+        },
+        "teachable": 35,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Wales/iconPerks_trailOfTorment"
+    },
+    "Unnerving_Presence": {
+        "categories": [
+            "hinderance"
+        ],
+        "name": "Unnerving Presence",
+        "description": "Survivors within your Terror Radius get {Tunable.K01P01.SkillcheckOddsIncrease%}% more basic Skill Checks.<br><br>The good zone of basic Skill Checks is {Tunable.K01P01.SuccessZoneSizePenalty%}% smaller.",
+        "role": "killer",
+        "character": 268435456,
+        "tunables": {
+            "skillcheckoddsincrease%": [
+                10
+            ],
+            "successzonesizepenalty%": [
+                40,
+                50,
+                60
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_unnervingPresence"
+    },
+    "Unrelenting": {
+        "categories": [
+            "cruelty"
+        ],
+        "name": "Unrelenting",
+        "description": "Whenever you miss a basic-attack, your cooldown is {Tunable.KG_Unrelenting.AttackMissCooldownReduction%}% shorter.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "attackmisscooldownreduction%": [
+                20,
+                25,
+                30
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_unrelenting"
+    },
+    "Whispers": {
+        "categories": [
+            "tracking"
+        ],
+        "name": "Whispers",
+        "description": "While within {Tunable.KG_Whispers.RangeToSurvivors}m of a Survivor, you randomly hear whispers.",
+        "role": "killer",
+        "character": null,
+        "tunables": {
+            "rangetosurvivors": [
+                48,
+                40,
+                32
+            ],
+            "timebetweenaudio": [
+                3
+            ]
+        },
+        "teachable": 0,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/iconPerks_whispers"
+    },
+    "ZanshinTactics": {
+        "categories": [
+            "chasing"
+        ],
+        "name": "Zanshin Tactics",
+        "description": "Within {Tunable.K18P01.VaultablesRevealDistance}m, you see the Auras of Pallets and windows.<br><br>Whenever a Survivor drops a Pallet, you see their Aura for {Tunable.K18P01.AuraRevealDuration}s.",
+        "role": "killer",
+        "character": 268435473,
+        "tunables": {
+            "aurarevealduration": [
+                3,
+                4,
+                5
+            ],
+            "vaultablesrevealdistance": [
+                32
+            ]
+        },
+        "teachable": 30,
+        "image": "/Game/UI/UMGAssets/Icons/Perks/Sweden/iconPerks_zanshinTactics"
+    }
+}
