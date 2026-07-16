@@ -16,7 +16,7 @@ Tento projekt obsahuje dvě verze kódu, aby si uživatel mohl vybrat, co mu ví
 
 ### 1. Online verze (API)
 * **Popis:** Při spuštění automaticky stahuje nejnovější data o hře z veřejného API (Tricky.lol).
-* **Výhody:** Aplikace je vždy aktuální bez nutnosti updatovat zdrojové soubory, když vyjde nová DBD kapitola. Výsledný `.exe` soubor je velmi malý.
+* **Výhody:** Aplikace je vždy aktuální bez nutnosti updatovat zdrojové soubory, když vyjde nová DBD kapitola..
 * **Nevýhody:** Ke spuštění a běhu potřebuje funkční připojení k internetu (při startu chvilku trvá načtení dat).
 
 ### 2. Offline verze (JSON)
