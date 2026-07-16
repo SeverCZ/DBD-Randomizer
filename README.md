@@ -20,7 +20,7 @@ Tento projekt obsahuje dvě verze kódu, aby si uživatel mohl vybrat, co mu ví
 * **Nevýhody:** Ke spuštění a běhu potřebuje funkční připojení k internetu (při startu chvilku trvá načtení dat).
 
 ### 2. Offline verze (JSON)
-* **Popis:** Spoléhá se na lokální `.json` soubory (`survivor.json`, `killer.json`, `items.json`, atd.), které musí být stažené ve stejné složce.
+* **Popis:** Spoléhá se na lokální `.json` soubory dostupné na Tricky.lol (`survivor.json`, `killer.json`, `items.json`, atd.), které musí být stažené ve stejné složce.
 * **Výhody:** Nevyžaduje připojení k internetu a zapíná se okamžitě.
 * **Nevýhody:** Když vyjde nový Killer/Survivor, musíte manuálně aktualizovat.
 
