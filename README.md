@@ -25,6 +25,7 @@ Tento projekt obsahuje dvě verze kódu, aby si uživatel mohl vybrat, co mu ví
 * **Nevýhody:** Když vyjde nový Killer/Survivor, musíte manuálně aktualizovat.
 
 ## Požadavky a spuštění
+Exe soubor pro spuštění se nachází v daných složkách verze v podsložce dist, stačí stáhnout pouze daný soubor.
 
 Pokud chcete aplikaci spouštět ze zdrojového kódu (Python skriptu), musíte mít nainstalovaný Python a následující knihovny:
 
