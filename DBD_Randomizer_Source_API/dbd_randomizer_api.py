@@ -13,7 +13,10 @@ class DbdApp(ctk.CTk):
         # Nastavení ikonky okna (očekává app_icon.ico přibalený v exe)
         icon_path = os.path.join(self.get_base_path(), "app_icon.ico")
         if os.path.exists(icon_path):
-            self.iconbitmap(icon_path)
+            try:
+                self.iconbitmap(icon_path)
+            except Exception:
+                pass
             
         self.title("Dead by Daylight - Randomizer")
         self.geometry("600x850")
