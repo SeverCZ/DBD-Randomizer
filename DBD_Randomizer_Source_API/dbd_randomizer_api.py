@@ -62,14 +62,13 @@ class DbdApp(ctk.CTk):
     def load_data(self):
         def get_api(url):
             try:
-                # Nastavíme hlavičku, občas API blokují přístupy bez User-Agenta
                 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
                 response = requests.get(url, headers=headers, timeout=10)
                 response.raise_for_status()
                 return response.json()
             except requests.RequestException as e:
                 print(f"Chyba při stahování API {url}: {e}")
-                return {} # Při chybě (např. bez internetu) vrátí prázdná data
+                return {}
 
         API_URLS = {
             "perk_survivor": "https://dbd.tricky.lol/api/perks?role=survivor",
@@ -83,7 +82,6 @@ class DbdApp(ctk.CTk):
             "killer_addons": "https://dbd.tricky.lol/api/addons?role=killer"
         }
 
-        # Stahování dat z API
         s_raw = get_api(API_URLS["survivor"])
         k_raw = get_api(API_URLS["killer"])
         p_surv = get_api(API_URLS["perk_survivor"])
@@ -94,13 +92,17 @@ class DbdApp(ctk.CTk):
         addons_surv = get_api(API_URLS["survivor_addons"])
         addons_kill = get_api(API_URLS["killer_addons"])
 
-        # Pomocná funkce pro bezpečné vytažení hodnot (pokud API vrátí dict)
         def get_vals(data):
             return list(data.values()) if isinstance(data, dict) else data
 
         return {
+            "survivors_raw": get_vals(s_raw), # Uchování celých objektů přeživších kvůli perkům
             "survivors": [s["name"] for s in get_vals(s_raw) if isinstance(s, dict) and "name" in s],
             "killers": get_vals(k_raw),
+            "perks_raw": { # Uchování surových slovníků s vazbami na postavy (character ID / null)
+                "survivor": p_surv if isinstance(p_surv, dict) else {},
+                "killer": p_kill if isinstance(p_kill, dict) else {}
+            },
             "perks": {
                 "survivor": [item["name"] for item in get_vals(p_surv) if isinstance(item, dict) and "name" in item],
                 "killer": [item["name"] for item in get_vals(p_kill) if isinstance(item, dict) and "name" in item]
@@ -142,6 +144,10 @@ class DbdApp(ctk.CTk):
         self.check_item.pack(side="left", padx=10)
         
         self.check_addons = ctk.CTkCheckBox(self.options_frame, text="Zahrnout Addony")
+        
+        # Nový checkbox pro Custom Game - řadí se automaticky vedle ostatních na jeden řádek
+        self.check_custom = ctk.CTkCheckBox(self.options_frame, text="Custom Game")
+        self.check_custom.pack(side="left", padx=10)
         
         ctk.CTkButton(self.tab_gen, text="Generovat", command=self.generate).pack(pady=20)
         self.result_label = ctk.CTkLabel(self.tab_gen, text="Zde se zobrazí výsledek", font=("Arial", 12), justify="left")
@@ -199,7 +205,33 @@ class DbdApp(ctk.CTk):
             
         chosen_char_name = random.choice(choices_objs) if role == "Survivor" else random.choice(choices_objs)["name"]
         
-        pool = list(self.data["perks"].get(role.lower(), []))
+        # --- LOGIKA VÝBĚRU PERKŮ PODLE CUSTOM GAME ---
+        if self.check_custom.get():
+            # Pokud je Custom Game aktivní, bere se kompletně celý pool bez omezení
+            pool = list(self.data["perks"].get(role.lower(), []))
+        else:
+            # Pokud Custom Game aktivní NENÍ, filtrujeme perky podle označených postav
+            selected_perk_keys = set()
+            if role == "Survivor":
+                for s in self.data.get("survivors_raw", []):
+                    if isinstance(s, dict) and s.get("name") in choices_objs:
+                        for p_key in s.get("perks", []):
+                            selected_perk_keys.add(p_key)
+            else:
+                for k in choices_objs:
+                    if isinstance(k, dict):
+                        for p_key in k.get("perks", []):
+                            selected_perk_keys.add(p_key)
+            
+            pool = []
+            perks_dict = self.data.get("perks_raw", {}).get(role.lower(), {})
+            for p_key, p_info in perks_dict.items():
+                if isinstance(p_info, dict):
+                    # Podmínka: buď je perk obecný (character: null) nebo patří k označené postavě
+                    if p_info.get("character") is None or p_key in selected_perk_keys:
+                        pool.append(p_info["name"])
+        # ---------------------------------------------
+        
         random.shuffle(pool) 
         perks_text = "\n".join([f"• {p}" for p in pool[:num_perks]])
         
