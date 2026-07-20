@@ -27,6 +27,10 @@ class DbdApp(ctk.CTk):
         self.data = self.load_data()
         self.parse_perks()
         self.settings = self.load_settings()
+        
+        # Uložená velikost písma pro výsledek (výchozí 12)
+        self.result_font_size = self.settings.get("result_font_size", 12)
+        
         self.init_variables()
 
         # Tvorba záložek
@@ -35,10 +39,12 @@ class DbdApp(ctk.CTk):
         self.tab_gen = self.tabview.add("Generování")
         self.tab_set = self.tabview.add("Postavy")
         self.tab_perks = self.tabview.add("Perky")
+        self.tab_setts = self.tabview.add("Nastavení") 
 
         self.setup_generator()
         self.setup_characters()
         self.setup_perks()
+        self.setup_settings() 
 
     def get_base_path(self):
         # Spolehlivé určení cesty (oprava pro Linux/WSL i pro zabalené .exe)
@@ -51,7 +57,7 @@ class DbdApp(ctk.CTk):
             try:
                 with open(self.settings_file, 'r') as f: return json.load(f)
             except: pass
-        return {"survivors": {}, "killers": {}, "perks": {"survivor": {}, "killer": {}}}
+        return {"survivors": {}, "killers": {}, "perks": {"survivor": {}, "killer": {}}, "result_font_size": 12}
 
     def save_settings(self):
         settings = {
@@ -60,7 +66,8 @@ class DbdApp(ctk.CTk):
             "perks": {
                 "survivor": {p_name: var.get() for p_name, var in self.perk_vars["survivor"].items()},
                 "killer": {p_name: var.get() for p_name, var in self.perk_vars["killer"].items()}
-            }
+            },
+            "result_font_size": self.result_font_size 
         }
         with open(self.settings_file, 'w') as f: json.dump(settings, f)
 
@@ -229,8 +236,23 @@ class DbdApp(ctk.CTk):
         self.check_custom.pack(side="left", padx=10)
         
         ctk.CTkButton(self.tab_gen, text="Generovat", command=self.generate).pack(pady=20)
-        self.result_label = ctk.CTkLabel(self.tab_gen, text="Zde se zobrazí výsledek", font=("Arial", 12), justify="left")
+        
+        self.result_label = ctk.CTkLabel(self.tab_gen, text="Zde se zobrazí výsledek", font=("Arial", self.result_font_size), justify="left")
         self.result_label.pack()
+
+    def setup_settings(self):
+        ctk.CTkLabel(self.tab_setts, text="Velikost textu výsledku:", font=("Arial", 13, "bold")).pack(pady=20)
+        
+        self.result_font_slider = ctk.CTkSlider(self.tab_setts, from_=10, to=28, number_of_steps=18, command=self.update_result_font)
+        self.result_font_slider.set(self.result_font_size)
+        self.result_font_slider.pack(pady=10)
+        
+        ctk.CTkLabel(self.tab_setts, text="(Změna se projeví okamžitě u vygenerovaného textu)", font=("Arial", 11)).pack(pady=10)
+
+    def update_result_font(self, value):
+        self.result_font_size = int(value)
+        self.result_label.configure(font=("Arial", self.result_font_size))
+        self.save_settings()
 
     def toggle_addon_visibility(self):
         if self.role_var.get() == "Survivor":
@@ -321,15 +343,12 @@ class DbdApp(ctk.CTk):
         
         # --- LOGIKA VÝBĚRU PERKŮ (Custom Game vs Omezený výběr) ---
         if self.check_custom.get():
-            # Pokud je zapnutý Custom Game, bere perky bez ohledu na vlastnictví a odklikání (naprosto vše)
             pool = list(self.data["perks"].get(role.lower(), []))
         else:
-            # Nová ultimátní logika: pool tvoří PŘESNĚ TY PERKY, KTERÉ JSOU V 3. ZÁLOŽCE ZAKLIKNUTÉ
             pool = [p_name for p_name, var in self.perk_vars[role.lower()].items() if var.get()]
         # ---------------------------------------------------------
         
         random.shuffle(pool) 
-        # Zabrání chybě, kdyby si uživatel vypnul víc perků, než kolik se snaží vylosovat
         perks_text = "\n".join([f"• {p}" for p in pool[:num_perks]])
         if not perks_text:
             perks_text = "Žádné perky nebyly nalezeny (všechny jsi odškrtl)!"
@@ -345,12 +364,26 @@ class DbdApp(ctk.CTk):
                     item_text = f"\nItem: {chosen_item['name']}" if self.check_item.get() else ""
                     if self.check_addons.get():
                         addons_pool = [a['name'] for a in self.data["addons_survivor"] if a.get('item_type') == chosen_item.get('item_type')]
-                        item_text += f"\nAddony: {', '.join(random.sample(addons_pool, min(2, len(addons_pool))))}" if addons_pool else "\nAddony: Žádné"
+                        if addons_pool:
+                            sampled = random.sample(addons_pool, min(2, len(addons_pool)))
+                            if len(sampled) == 2:
+                                item_text += f"\nAddony: {sampled[0]}\n              {sampled[1]}"
+                            else:
+                                item_text += f"\nAddony: {sampled[0]}"
+                        else:
+                            item_text += "\nAddony: Žádné"
             elif self.check_addons.get():
                 killer_item_id = next((obj["item"] for obj in self.data["killers"] if obj["name"] == chosen_char_name), None)
                 if killer_item_id:
                     addons_pool = [a['name'] for a in self.data["addons_killer"] if killer_item_id in a.get("parents", [])]
-                    item_text = f"\nAddony: {', '.join(random.sample(addons_pool, min(2, len(addons_pool))))}" if addons_pool else "\nAddony: Žádné"
+                    if addons_pool:
+                        sampled = random.sample(addons_pool, min(2, len(addons_pool)))
+                        if len(sampled) == 2:
+                            item_text = f"\nAddony:\n {sampled[0]}\n              {sampled[1]}"
+                        else:
+                            item_text = f"\nAddony: {sampled[0]}"
+                    else:
+                        item_text = "\nAddony: Žádné"
 
         self.result_label.configure(text=f"Postava: {chosen_char_name}{offering_text}{item_text}\n\nVybrané perky:\n{perks_text}")
 
