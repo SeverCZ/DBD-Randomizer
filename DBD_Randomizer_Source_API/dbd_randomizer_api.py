@@ -21,7 +21,13 @@ class DbdApp(ctk.CTk):
         self.title("Dead by Daylight - Randomizer")
         self.geometry("600x850")
         
-        self.settings_file = os.path.join(self.get_base_path(), "user_settings.json")
+        # --- OPRAVA UKLÁDÁNÍ PRO .EXE ---
+        if getattr(sys, 'frozen', False):
+            exe_folder = os.path.dirname(sys.executable)
+            self.settings_file = os.path.join(exe_folder, "user_settings.json")
+        else:
+            self.settings_file = os.path.join(self.get_base_path(), "user_settings.json")
+        # --------------------------------
         
         # Načtení a zpracování dat
         self.data = self.load_data()
@@ -379,7 +385,7 @@ class DbdApp(ctk.CTk):
                     if addons_pool:
                         sampled = random.sample(addons_pool, min(2, len(addons_pool)))
                         if len(sampled) == 2:
-                            item_text = f"\nAddony:\n {sampled[0]}\n              {sampled[1]}"
+                            item_text = f"\nAddony: {sampled[0]}\n              {sampled[1]}"
                         else:
                             item_text = f"\nAddony: {sampled[0]}"
                     else:

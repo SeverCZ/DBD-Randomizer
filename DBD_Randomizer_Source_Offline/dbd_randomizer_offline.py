@@ -20,7 +20,13 @@ class DbdApp(ctk.CTk):
         self.title("Dead by Daylight - Randomizer")
         self.geometry("600x850")
         
-        self.settings_file = os.path.join(self.get_base_path(), "user_settings.json")
+        # --- OPRAVA UKLÁDÁNÍ PRO .EXE ---
+        if getattr(sys, 'frozen', False):
+            exe_folder = os.path.dirname(sys.executable)
+            self.settings_file = os.path.join(exe_folder, "user_settings.json")
+        else:
+            self.settings_file = os.path.join(self.get_base_path(), "user_settings.json")
+        # --------------------------------
         
         # Načtení a zpracování dat z lokálních JSON souborů
         self.data = self.load_data()
@@ -294,7 +300,6 @@ class DbdApp(ctk.CTk):
         for role, col in [("survivor", col_s), ("killer", col_k)]:
             # 1. Nejdříve vykreslíme General perky
             if self.general_perks[role]:
-                # Nadpis sekce General
                 lbl = ctk.CTkLabel(col, text="General", font=("Arial", 13, "bold"), text_color=("gray10", "gray90"))
                 lbl.pack(anchor="w", pady=(10, 0))
                 for p_name in self.general_perks[role]:
@@ -306,10 +311,8 @@ class DbdApp(ctk.CTk):
             for char_name in char_list:
                 p_names = self.perks_by_char[role].get(char_name, [])
                 if p_names:
-                    # Nadpis jména postavy
                     lbl = ctk.CTkLabel(col, text=char_name, font=("Arial", 13, "bold"), text_color=("gray10", "gray90"))
                     lbl.pack(anchor="w", pady=(10, 0))
-                    # 3 Checkboxy Perkủ pro danou postavu
                     for p_name in p_names:
                         ctk.CTkCheckBox(col, text=p_name, variable=self.perk_vars[role][p_name], 
                                         command=self.save_settings).pack(anchor="w", padx=10, pady=2)
@@ -330,8 +333,10 @@ class DbdApp(ctk.CTk):
         
         # --- LOGIKA VÝBĚRU PERKŮ (Custom Game vs Omezený výběr) ---
         if self.check_custom.get():
+            # Pokud je zapnutý Custom Game, bere perky bez ohledu na vlastnictví a odklikání (naprosto vše)
             pool = list(self.data["perks"].get(role.lower(), []))
         else:
+            # Nová ultimátní logika: pool tvoří PŘESNĚ TY PERKY, KTERÉ JSOU V 3. ZÁLOŽCE ZAKLIKNUTÉ
             pool = [p_name for p_name, var in self.perk_vars[role.lower()].items() if var.get()]
         # ---------------------------------------------------------
         
@@ -354,6 +359,7 @@ class DbdApp(ctk.CTk):
                         if addons_pool:
                             sampled = random.sample(addons_pool, min(2, len(addons_pool)))
                             if len(sampled) == 2:
+                                # Zarovnání pod sebe - 14 mezer
                                 item_text += f"\nAddony: {sampled[0]}\n              {sampled[1]}"
                             else:
                                 item_text += f"\nAddony: {sampled[0]}"
@@ -366,6 +372,7 @@ class DbdApp(ctk.CTk):
                     if addons_pool:
                         sampled = random.sample(addons_pool, min(2, len(addons_pool)))
                         if len(sampled) == 2:
+                            # Zarovnání pod sebe - 14 mezer
                             item_text = f"\nAddony: {sampled[0]}\n              {sampled[1]}"
                         else:
                             item_text = f"\nAddony: {sampled[0]}"
